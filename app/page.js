@@ -1,7 +1,7 @@
 export default function Home() {
   const touristSpots = [
     {
-      name: 'Tanghas Beach',
+      name: 'Sta. Cruz Beach',
       description:
         'A relaxing coastal destination known for its scenic shoreline, calm waves, and beautiful sunrise views.',
       image:
@@ -15,7 +15,7 @@ export default function Home() {
         'https://images.unsplash.com/photo-1493558103817-58b2924bce98?q=80&w=1600&auto=format&fit=crop',
     },
     {
-      name: 'Guinabotan Cave',
+      name: 'Bantay Dagat Skim Spot',
       description:
         'A natural cave attraction offering adventure, exploration, and rich local stories from the past.',
       image:
@@ -25,19 +25,19 @@ export default function Home() {
 
   const resorts = [
     {
-      name: 'Blue Horizon Resort',
+      name: 'Haiyan Peak Resort',
       type: 'Beach Resort',
       image:
         'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1600&auto=format&fit=crop',
     },
     {
-      name: 'Leyte Paradise Resort',
+      name: 'Payag ni Lolo Iri',
       type: 'Family Resort',
       image:
         'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1600&auto=format&fit=crop',
     },
     {
-      name: 'Sunset Cove Resort',
+      name: 'Hidden Beach Resort',
       type: 'Luxury Stay',
       image:
         'https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?q=80&w=1600&auto=format&fit=crop',
@@ -53,7 +53,7 @@ export default function Home() {
     },
     {
       name: 'Fiesta Celebration of Tanauan',
-      month: 'August',
+      month: 'July-August',
       description:
         'A lively town fiesta featuring parades, local delicacies, community gatherings, and religious activities.',
     },
