@@ -47,7 +47,7 @@ export default function Home() {
   const festivals = [
     {
       name: 'Pasaka Festival',
-      month: 'June',
+      month: 'August 14',
       description:
         'Is a vibrant street spectacle honoring Our Lady of Assumption and inviting future progress, health, and fortune. The celebration also highlights Tanauan’s traditional livelihoods by proudly showcasing local pottery, banig weaving, farming, and fishing..',
     },
