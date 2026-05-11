@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #050816;
+  color: white;
+  font-family: sans-serif;
+}
+
+.gradient {
+  background: linear-gradient(135deg,#00c2ff,#7b61ff,#00f5d4);
+}
+
+.glass {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.hero-bg {
+  background-image:
+  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  url('/images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+}
