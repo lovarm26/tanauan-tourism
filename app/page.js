@@ -46,14 +46,14 @@ export default function Home() {
 
   const festivals = [
     {
-      name: 'Pintados-Kasadyaan Festival',
+      name: 'Pasaka Festival',
       month: 'June',
       description:
-        'A colorful cultural celebration showcasing traditional dances, music, and vibrant body art inspired by the ancient Pintados warriors.',
+        'Is a vibrant street spectacle honoring Our Lady of Assumption and inviting future progress, health, and fortune. The celebration also highlights Tanauan’s traditional livelihoods by proudly showcasing local pottery, banig weaving, farming, and fishing..',
     },
     {
       name: 'Fiesta Celebration of Tanauan',
-      month: 'September',
+      month: 'August',
       description:
         'A lively town fiesta featuring parades, local delicacies, community gatherings, and religious activities.',
     },
