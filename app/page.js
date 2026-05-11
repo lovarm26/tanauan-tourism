@@ -66,7 +66,7 @@ export default function Home() {
   ]
 
   return (
-    <main className="bg-gradient-to-br from-pink-500 via-orange-400 to-yellow-300 text-white overflow-hidden">
+    <main className="bg-gradient-to-br from-pink-500 via-orange-400 to-yellow-300 text-black overflow-hidden">
       {/* HERO SECTION */}
       <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
         <div
@@ -81,16 +81,18 @@ export default function Home() {
 
         <div className="relative z-10 max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="uppercase tracking-[0.3em] text-cyan-400 mb-4 text-sm">
+            <p className="uppercase tracking-[0.3em] text-black/70 font-bold mb-4 text-sm"
               Welcome to Eastern Visayas
             </p>
 
             <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6">
               Discover
-              <span className="block text-cyan-400">Tanauan Leyte</span>
+              <span className="block bg-gradient-to-r from-black via-fuchsia-900 to-black bg-clip-text text-transparent drop-shadow-2xl">
+  Tanauan Leyte
+</span>
             </h1>
 
-            <p className="text-lg text-gray-300 leading-relaxed max-w-xl mb-8">
+            <p className="text-lg text-black/70 font-medium leading-relaxed max-w-xl mb-8"
               Explore breathtaking beaches, rich cultural history, scenic
               landscapes, local festivals, and relaxing resorts in the beautiful
               municipality of Tanauan, Leyte.
@@ -115,7 +117,7 @@ export default function Home() {
                 <h2 className="text-2xl font-bold mb-3">
                   Upload Your Scenic Photo
                 </h2>
-                <p className="text-gray-300 mb-6 max-w-sm">
+                <p className="text-black-300 mb-6 max-w-sm">
                   Replace this section with your own tourism image or featured
                   destination photo for Tanauan Leyte.
                 </p>
@@ -149,10 +151,10 @@ export default function Home() {
                 key={index}
                 className="bg-gradient-to-br from-pink-500/30 via-orange-400/20 to-yellow-300/20 border border-white/20 rounded-3xl p-8 backdrop-blur-lg hover:scale-105 hover:rotate-1 transition-all shadow-2xl"
               >
-                <h3 className="text-5xl font-black text-cyan-400 mb-3">
+                <h3 className="text-5xl font-black text-black drop-shadow-lg mb-3"
                   {item.value}
                 </h3>
-                <p className="text-gray-300 text-lg">{item.label}</p>
+                <p className="text-black/70 font-semibold text-lg"
               </div>
             ))}
           </div>
@@ -166,8 +168,8 @@ export default function Home() {
             <p className="text-cyan-400 uppercase tracking-[0.3em] mb-3 text-sm">
               Destinations
             </p>
-            <h2 className="text-5xl font-black mb-6">Tourist Spots</h2>
-            <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+            <h2 className="text-5xl font-black mb-6 bg-gradient-to-r from-black via-fuchsia-900 to-black bg-clip-text text-transparent">Tourist Spots</h2>
+            <p className="text-black-400 max-w-2xl mx-auto text-lg">
               Experience the beauty and hidden gems of Tanauan Leyte through its
               beaches, landmarks, and nature attractions.
             </p>
@@ -189,7 +191,7 @@ export default function Home() {
 
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-3">{spot.name}</h3>
-                  <p className="text-gray-400 leading-relaxed">
+                  <p className="text-black-400 leading-relaxed">
                     {spot.description}
                   </p>
                 </div>
@@ -204,7 +206,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16">
             <div>
-              <p className="text-cyan-400 uppercase tracking-[0.3em] mb-3 text-sm">
+              <p className="text-black-400 uppercase tracking-[0.3em] mb-3 text-sm">
                 Relax & Stay
               </p>
               <h2 className="text-5xl font-black mb-4">
@@ -212,7 +214,7 @@ export default function Home() {
               </h2>
             </div>
 
-            <p className="text-gray-400 max-w-xl text-lg">
+            <p className="text-black-400 max-w-xl text-lg">
               Enjoy luxurious accommodations, family-friendly resorts, and scenic
               beachfront stays perfect for your Leyte getaway.
             </p>
@@ -247,7 +249,7 @@ export default function Home() {
       {/* HISTORY */}
       <section className="px-6 py-24 bg-gradient-to-br from-fuchsia-700 via-orange-500 to-yellow-400">
         <div className="max-w-5xl mx-auto text-center">
-          <p className="text-cyan-400 uppercase tracking-[0.3em] mb-4 text-sm">
+          <p className="text-black-400 uppercase tracking-[0.3em] mb-4 text-sm">
             Historical Background
           </p>
 
@@ -283,13 +285,13 @@ export default function Home() {
       <section className="px-6 py-24">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-cyan-400 uppercase tracking-[0.3em] mb-4 text-sm">
+            <p className="text-black-400 uppercase tracking-[0.3em] mb-4 text-sm">
               Celebrations
             </p>
             <h2 className="text-5xl font-black mb-6">
               Festivals of Tanauan Leyte
             </h2>
-            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+            <p className="text-black/70 text-lg max-w-2xl mx-auto">
               Discover the vibrant culture and traditions celebrated throughout
               the year in Tanauan Leyte.
             </p>
@@ -306,13 +308,13 @@ export default function Home() {
                     <h3 className="text-3xl font-bold mb-3">
                       {festival.name}
                     </h3>
-                    <p className="text-gray-400 leading-relaxed text-lg max-w-3xl">
+                    <p className="text-black/70 leading-relaxed text-lg max-w-3xl">
                       {festival.description}
                     </p>
                   </div>
 
                   <div className="text-right">
-                    <p className="text-cyan-400 text-sm uppercase tracking-widest mb-2">
+                    <p className="text-black/60 font-bold text-sm uppercase tracking-widest mb-2"
                       Celebration Month
                     </p>
                     <h4 className="text-4xl font-black">{festival.month}</h4>
@@ -331,22 +333,22 @@ export default function Home() {
             <h3 className="text-2xl font-black text-cyan-400">
               Tanauan Leyte Tourism
             </h3>
-            <p className="text-gray-400 mt-2">
+            <p className="text-black/70 font-medium mt-2"
               Scenic destinations, rich culture, and unforgettable experiences.
             </p>
           </div>
 
-          <div className="flex gap-6 text-gray-300">
-            <a href="#" className="hover:text-cyan-400 transition-all">
+          <div className="flex gap-6 text-black-300">
+            <a href="#" className="hover:text-white font-semibold transition-all"
               Home
             </a>
-            <a href="#" className="hover:text-cyan-400 transition-all">
+            <a href="#" className="hover:text-white font-semibold transition-all"
               Tourist Spots
             </a>
-            <a href="#" className="hover:text-cyan-400 transition-all">
+            <a href="#" className="hover:text-white font-semibold transition-all"
               Resorts
             </a>
-            <a href="#" className="hover:text-cyan-400 transition-all">
+            <a href="#" className="hover:text-white font-semibold transition-all"
               Festivals
             </a>
           </div>
