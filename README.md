@@ -1,9 +1,10 @@
-# Tanauan Leyte Tourism Website
+# Tanauan Tourism
 
-## Run Locally
-
+## Install
 npm install
+
+## Run
 npm run dev
 
 ## Deploy
-Push to GitHub and import into Vercel.
+Push to GitHub and import to Vercel.
