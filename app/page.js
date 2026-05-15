@@ -313,17 +313,27 @@ export default function Home() {
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
 
-                <div className="absolute bottom-0 p-8 z-10 text-white w-full">
+               <div className="absolute bottom-0 p-8 z-10 text-white w-full">
 
-                  <p className="text-yellow-300 mb-2 font-semibold tracking-wide">
-                    {resort.type}
-                  </p>
+  <p className="text-yellow-300 mb-2 font-semibold tracking-wide">
+    {resort.type}
+  </p>
 
-                  <h3 className="text-3xl font-black mb-4">
-                    {resort.name}
-                  </h3>
+  <h3 className="text-3xl font-black mb-4">
+    {resort.name}
+  </h3>
 
-                </div>
+  {/* BOOK NOW BUTTON */}
+  <a
+    href={resort.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block mt-3 px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:scale-105 transition-all duration-300 font-semibold shadow-xl"
+  >
+    Book Now!
+  </a>
+
+</div>
 
               </a>
 
