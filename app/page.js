@@ -199,104 +199,131 @@ export default function Home() {
       </section>
 
       {/* TOURIST SPOTS */}
-      <div className="max-w-7xl mx-auto">
+<section className="px-6 py-20 relative z-10">
 
-          <div className="text-center mb-16">
-            <p className="text-sky-900 uppercase tracking-[0.3em] mb-3 text-sm font-bold">
-              Destinations
-            </p>
+  <div className="max-w-7xl mx-auto">
 
-            <h2 className="text-5xl font-black mb-6 bg-gradient-to-r from-sky-900 via-cyan-600 to-orange-500 bg-clip-text text-transparent">
-              Tourist Spots
-            </h2>
+    <div className="text-center mb-16">
+      <p className="text-sky-900 uppercase tracking-[0.3em] mb-3 text-sm font-bold">
+        Destinations
+      </p>
 
-            <p className="text-slate-700 max-w-2xl mx-auto text-lg">
-              Experience the beauty and hidden gems of Tanauan Leyte through its
-              beaches, landmarks, and nature attractions.
+      <h2 className="text-5xl font-black mb-6 bg-gradient-to-r from-sky-900 via-cyan-600 to-orange-500 bg-clip-text text-transparent">
+        Tourist Spots
+      </h2>
+
+      <p className="text-slate-700 max-w-2xl mx-auto text-lg">
+        Experience the beauty and hidden gems of Tanauan Leyte through its
+        beaches, landmarks, and nature attractions.
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      {touristSpots.map((spot, index) => (
+
+        <div
+          key={index}
+          className="group bg-white/30 backdrop-blur-xl rounded-[2rem] overflow-hidden border border-white/30 hover:-translate-y-4 hover:shadow-[0_20px_60px_rgba(0,0,0,0.25)] transition-all duration-700"
+        >
+
+          <div className="overflow-hidden h-64">
+            <img
+              src={spot.image}
+              alt={spot.name}
+              className="w-full h-full object-cover group-hover:scale-110 group-hover:rotate-1 transition-all duration-700"
+            />
+          </div>
+
+          <div className="p-6">
+            <h3 className="text-2xl font-bold mb-3">
+              {spot.name}
+            </h3>
+
+            <p className="text-slate-700 leading-relaxed">
+              {spot.description}
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-            {touristSpots.map((spot, index) => (
-
-              <div
-                key={index}
-                className="group bg-white/30 backdrop-blur-xl rounded-[2rem] overflow-hidden border border-white/30 hover:-translate-y-4 hover:shadow-[0_20px_60px_rgba(0,0,0,0.25)] transition-all duration-700"
-              >
-
-                <div className="overflow-hidden h-64">
-                  <img
-                    src={spot.image}
-                    alt={spot.name}
-                    className="w-full h-full object-cover group-hover:scale-110 group-hover:rotate-1 transition-all duration-700"
-                  />
-                </div>
-
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold mb-3">
-                    {spot.name}
-                  </h3>
-
-                  <p className="text-slate-700 leading-relaxed">
-                    {spot.description}
-                  </p>
-                </div>
-
-              </div>
-
-            ))}
-
-          </div>
         </div>
-      </section>
 
-      {/* RESORTS */}
-      
+      ))}
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    </div>
 
-  {resorts.map((resort, index) => (
+  </div>
 
-    <a
-      key={index}
-      href={resort.link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="relative rounded-[2rem] overflow-hidden group h-[420px] hover:-translate-y-4 transition-all duration-700 shadow-2xl block"
-    >
+</section>
 
-      <img
-        src={resort.image}
-        alt={resort.name}
-        className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
-      />
+{/* RESORTS */}
+<section className="px-6 py-20 relative z-10">
 
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+  <div className="max-w-7xl mx-auto">
 
-      <div className="absolute bottom-0 p-8 z-10 text-white w-full">
+    <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16">
 
-        <p className="text-yellow-300 mb-2 font-semibold tracking-wide">
-          {resort.type}
+      <div>
+        <p className="text-sky-900 uppercase tracking-[0.3em] mb-3 text-sm font-bold">
+          Relax & Stay
         </p>
 
-        <h3 className="text-3xl font-black mb-4">
-          {resort.name}
-        </h3>
-
-        <button className="px-5 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:scale-105 transition-all duration-300 font-semibold shadow-xl">
-          Book Now! For Reservations
-        </button>
-
+        <h2 className="text-5xl font-black mb-4 bg-gradient-to-r from-sky-900 via-cyan-600 to-orange-500 bg-clip-text text-transparent">
+          Available Resorts
+        </h2>
       </div>
 
-    </a>
+      <p className="text-slate-700 max-w-xl text-lg">
+        Enjoy luxurious accommodations, family-friendly resorts, and scenic
+        beachfront stays perfect for your Leyte getaway.
+      </p>
 
-  ))}
+    </div>
 
-</div>
-        </div>
-      </section>
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      {resorts.map((resort, index) => (
+
+        <a
+          key={index}
+          href={resort.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative rounded-[2rem] overflow-hidden group h-[420px] hover:-translate-y-4 transition-all duration-700 shadow-2xl block"
+        >
+
+          <img
+            src={resort.image}
+            alt={resort.name}
+            className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
+          />
+
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+
+          <div className="absolute bottom-0 p-8 z-10 text-white w-full">
+
+            <p className="text-yellow-300 mb-2 font-semibold tracking-wide">
+              {resort.type}
+            </p>
+
+            <h3 className="text-3xl font-black mb-4">
+              {resort.name}
+            </h3>
+
+            <button className="px-5 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:scale-105 transition-all duration-300 font-semibold shadow-xl">
+              Book Now! For Reservations
+            </button>
+
+          </div>
+
+        </a>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
 
       {/* HISTORY */}
       <section className="px-6 py-24 relative z-10">
