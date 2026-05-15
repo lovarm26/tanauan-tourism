@@ -4,22 +4,19 @@ export default function Home() {
       name: 'Sta. Cruz Beach',
       description:
         'A relaxing coastal destination known for its scenic shoreline, calm waves, and beautiful sunrise views.',
-      image:
-        'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop',
+      image: '/images/sta-cruz.png',
     },
     {
       name: 'Tanauan Baywalk',
       description:
         'A peaceful place to enjoy the sea breeze, local street food, and stunning sunset scenery.',
-      image:
-        'https://images.unsplash.com/photo-1493558103817-58b2924bce98?q=80&w=1600&auto=format&fit=crop',
+      image: '/images/baywalk.png',
     },
     {
       name: 'Bantay Dagat Skim Spot',
       description:
         'A natural cave attraction offering adventure, exploration, and rich local stories from the past.',
-      image:
-        'https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600&auto=format&fit=crop',
+      image: '/images/skim-spot.png',
     },
   ]
 
