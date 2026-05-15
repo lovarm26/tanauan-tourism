@@ -15,7 +15,7 @@ export default function Home() {
     {
       name: 'Bantay Dagat Skim Spot',
       description:
-        'A natural cave attraction offering adventure, exploration, and rich local stories from the past.',
+        'A natural waves attraction offering adventure, exploration, and rich local stories from the past.',
       image: 'https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/bantay-dagat.png',
     },
   ]
