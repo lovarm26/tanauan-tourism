@@ -325,138 +325,64 @@ export default function Home() {
 
 </section>
 
-      {/* TANAUAN PRODUCTS & CRAFTS */}
-<section className="px-6 py-20 relative z-10">
+   // FIXED PRODUCTS ARRAY
+  const products = [
+    {
+      name: 'Traditional Pottery',
+      category: 'Clay Craftsmanship',
+      description:
+        'Handmade clay pots, jars, and decorative pottery crafted by local artisans using traditional techniques.',
+      image:
+        'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1200&auto=format&fit=crop',
+    },
+    {
+      name: 'Bamboo Crafts',
+      category: 'Native Handicrafts',
+      description:
+        'Locally woven bamboo baskets, furniture, and decorative crafts showcasing the creativity of Tanauan artisans.',
+      image:
+        'https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?q=80&w=1200&auto=format&fit=crop',
+    },
+    {
+      name: 'Dried Fish Products',
+      category: 'Seafood Delicacies',
+      description:
+        'Fresh and flavorful dried fish products prepared by coastal communities using traditional preservation methods.',
+      image:
+        'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?q=80&w=1200&auto=format&fit=crop',
+    },
+    {
+      name: 'Native Delicacies',
+      category: 'Local Food Products',
+      description:
+        'Taste authentic Leyte delicacies including suman, binagol, moron, and other locally loved delicacies.',
+      image:
+        'https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop',
+    },
+    {
+      name: 'Handwoven Products',
+      category: 'Traditional Weaving',
+      description:
+        'Beautiful woven mats, bags, and native products created from locally sourced materials.',
+      image:
+        'https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200&auto=format&fit=crop',
+    },
+    {
+      name: 'Seafood Specialties',
+      category: 'Local Industry',
+      description:
+        'Fresh seafood products and coastal specialties that reflect the rich marine resources of Tanauan.',
+      image:
+        'https://images.unsplash.com/photo-1510130387422-82bed34b37e9?q=80&w=1200&auto=format&fit=crop',
+    },
+  ]
 
-  <div className="max-w-7xl mx-auto">
-
-    <div className="text-center mb-16">
-
-      <p className="text-sky-900 uppercase tracking-[0.3em] mb-3 text-sm font-bold">
-        Local Heritage
-      </p>
-
-      <h2 className="text-5xl font-black mb-6 bg-gradient-to-r from-sky-900 via-cyan-600 to-orange-500 bg-clip-text text-transparent">
-        Tanauan’s Best Products & Crafts
-      </h2>
-
-      <p className="text-slate-700 max-w-3xl mx-auto text-lg">
-        Discover the pride of Tanauan Leyte through its handcrafted products,
-        native delicacies, bamboo crafts, pottery traditions, and fresh dried
-        seafood products made by local communities.
-      </p>
-
-    </div>
-
-    {/* PRODUCTS ARRAY */}
-      const products = [
-        {
-          name: 'Traditional Pottery',
-          category: 'Clay Craftsmanship',
-          description:
-            'Handmade clay pots, jars, and decorative pottery crafted by local artisans using traditional techniques.',
-          image:
-            'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1200&auto=format&fit=crop',
-        },
-        {
-          name: 'Bamboo Crafts',
-          category: 'Native Handicrafts',
-          description:
-            'Locally woven bamboo baskets, furniture, and decorative crafts showcasing the creativity of Tanauan artisans.',
-          image:
-            'https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?q=80&w=1200&auto=format&fit=crop',
-        },
-        {
-          name: 'Dried Fish Products',
-          category: 'Seafood Delicacies',
-          description:
-            'Fresh and flavorful dried fish products prepared by coastal communities using traditional preservation methods.',
-          image:
-            'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?q=80&w=1200&auto=format&fit=crop',
-        },
-        {
-          name: 'Native Delicacies',
-          category: 'Local Food Products',
-          description:
-            'Taste authentic Leyte delicacies including suman, binagol, moron, and other locally loved delicacies.',
-          image:
-            'https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop',
-        },
-        {
-          name: 'Handwoven Products',
-          category: 'Traditional Weaving',
-          description:
-            'Beautiful woven mats, bags, and native products created from locally sourced materials.',
-          image:
-            'https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200&auto=format&fit=crop',
-        },
-        {
-          name: 'Seafood Specialties',
-          category: 'Local Industry',
-          description:
-            'Fresh seafood products and coastal specialties that reflect the rich marine resources of Tanauan.',
-          image:
-            'https://images.unsplash.com/photo-1510130387422-82bed34b37e9?q=80&w=1200&auto=format&fit=crop',
-        },
-      ]
-    */}
-
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-      {products.map((product, index) => (
-
-        <div
-          key={index}
-          className="group bg-white/30 backdrop-blur-xl rounded-[2rem] overflow-hidden border border-white/30 hover:-translate-y-4 hover:shadow-[0_20px_60px_rgba(0,0,0,0.25)] transition-all duration-700"
-        >
-
-          {/* IMAGE SLOT */}
-          <div className="relative overflow-hidden h-72">
-
-            <img
-              src={product.image}
-              alt={product.name}
-              className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
-            />
-
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-
-            <div className="absolute bottom-0 left-0 p-6 text-white">
-
-              <p className="text-yellow-300 text-sm font-semibold tracking-wide mb-2">
-                {product.category}
-              </p>
-
-              <h3 className="text-3xl font-black">
-                {product.name}
-              </h3>
-
-            </div>
-
-          </div>
-
-          {/* CONTENT */}
-          <div className="p-6">
-
-            <p className="text-slate-700 leading-relaxed">
-              {product.description}
-            </p>
-
-            <button className="mt-6 px-5 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white hover:scale-105 transition-all duration-300 font-semibold shadow-xl">
-              View Product
-            </button>
-
-          </div>
-
-        </div>
-
-      ))}
-
-    </div>
-
-  </div>
-
-</section>
+  return (
+    <main>
+      {/* YOUR JSX HERE */}
+    </main>
+  )
+}
 
       {/* HISTORY */}
       <section className="px-6 py-24 relative z-10">
