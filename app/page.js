@@ -93,7 +93,7 @@ export default function Home() {
           className="absolute inset-0 bg-cover bg-center opacity-40"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=2000&auto=format&fit=crop')",
+              "url('https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/tanauan_logo.jpg')",
           }}
         />
 
