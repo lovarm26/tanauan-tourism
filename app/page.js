@@ -162,34 +162,40 @@ export default function Home() {
           </div>
 
           {/* UPLOAD */}
-          <div className="relative">
-            <div className="bg-white/30 backdrop-blur-xl border border-white/30 rounded-[2rem] p-6 shadow-2xl">
+         {/* HERO IMAGE / VIDEO */}
+<div className="relative">
+  <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-[2rem] p-4 shadow-2xl overflow-hidden">
 
-              <div className="border-2 border-dashed border-cyan-500/40 rounded-3xl h-[420px] flex flex-col items-center justify-center text-center p-8 hover:border-cyan-500 transition-all duration-500">
+    {/* VIDEO */}
+    <video
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="w-full h-[420px] object-cover rounded-[1.5rem] hover:scale-[1.02] transition-all duration-700"
+    >
+      <source
+        src="https://cdn.coverr.co/videos/coverr-tropical-beach-aerial-view-1560129401198?download=1080p"
+        type="video/mp4"
+      />
+    </video>
 
-                <div className="text-6xl mb-4 animate-bounce">
-                  📸
-                </div>
+    {/* OPTIONAL OVERLAY */}
+    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-[2rem]" />
 
-                <h2 className="text-2xl font-bold mb-3">
-                  Upload Your Scenic Photo
-                </h2>
+    {/* TEXT OVERLAY */}
+    <div className="absolute bottom-10 left-10 text-white z-10">
+      <p className="uppercase tracking-[0.3em] text-sm mb-2 font-semibold">
+        Experience Nature
+      </p>
 
-                <p className="text-slate-700 mb-6 max-w-sm">
-                  Replace this section with your own tourism image.
-                </p>
+      <h2 className="text-4xl font-black drop-shadow-xl">
+        Beautiful Tanauan Leyte
+      </h2>
+    </div>
 
-                <label className="cursor-pointer px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white hover:scale-105 transition-all font-medium shadow-xl">
-                  Upload Image
-                  <input type="file" className="hidden" />
-                </label>
-
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
+  </div>
+</div>
 
       {/* STATS */}
       <section className="px-6 py-20 relative z-10">
