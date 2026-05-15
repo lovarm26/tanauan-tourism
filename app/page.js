@@ -4,52 +4,55 @@ export default function Home() {
       name: 'Sta. Cruz Beach',
       description:
         'A relaxing coastal destination known for its scenic shoreline, calm waves, and beautiful sunrise views.',
-      image: 'https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/hidden-resort.png',
+      image:
+        'https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/hidden-resort.png',
     },
     {
       name: 'Tanauan Baywalk',
       description:
         'A peaceful place to enjoy the sea breeze, local street food, and stunning sunset scenery.',
-      image: 'https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/baywalk.png?w=1672&h=941',
+      image:
+        'https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/baywalk.png?w=1672&h=941',
     },
     {
       name: 'Bantay Dagat Skim Spot',
       description:
         'A natural cave attraction offering adventure, exploration, and rich local stories from the past.',
-      image: 'https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/bantay-dagat.png',
+      image:
+        'https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/bantay-dagat.png',
     },
   ]
 
   const resorts = [
-  {
-    name: 'Haiyan Peak Resort',
-    type: 'Luxury Stay',
-    image:
-      'https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/payag.png',
-    link: 'https://www.facebook.com/haiyanhotelresort/',
-  },
-  {
-    name: 'Payag ni Lolo Iri',
-    type: 'Family Resort',
-    image:
-      'https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/payagnilolo.png',
-    link: 'https://www.facebook.com/payagniloloiri',
-  },
-  {
-    name: 'Playa Alegre',
-    type: 'Beach & Pool Experience',
-    image:
-      'https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/playa.png',
-    link: 'https://www.facebook.com/PlayaAlegreLeyte',
-  },
-]
+    {
+      name: 'Haiyan Peak Resort',
+      type: 'Luxury Stay',
+      image:
+        'https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/payag.png',
+      link: 'https://www.facebook.com/haiyanhotelresort/',
+    },
+    {
+      name: 'Payag ni Lolo Iri',
+      type: 'Family Resort',
+      image:
+        'https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/payagnilolo.png',
+      link: 'https://www.facebook.com/payagniloloiri',
+    },
+    {
+      name: 'Playa Alegre',
+      type: 'Beach & Pool Experience',
+      image:
+        'https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/playa.png',
+      link: 'https://www.facebook.com/PlayaAlegreLeyte',
+    },
+  ]
 
   const festivals = [
     {
       name: 'Flores de Mayo Celebration',
       month: 'May',
       description:
-        'A colorful and faith-filled celebration honoring the Patron Saints and the Blessed Virgin Mary through the traditional Flores de Mayo festivities. The event highlights floral offerings, candle-light processions, local traditions, music, and cultural performances that reflect the community’s devotion, unity, and rich heritage throughout the month of May.',
+        'A colorful and faith-filled celebration honoring the Patron Saints and the Blessed Virgin Mary through the traditional Flores de Mayo festivities.',
     },
     {
       name: 'Fiesta Celebration of Tanauan',
@@ -65,13 +68,12 @@ export default function Home() {
     },
   ]
 
-   // FIXED PRODUCTS ARRAY
   const products = [
     {
       name: 'Traditional Pottery',
       category: 'Clay Craftsmanship',
       description:
-        'Handmade clay pots, jars, and decorative pottery crafted by local artisans using traditional techniques.',
+        'Handmade clay pots, jars, and decorative pottery crafted by local artisans.',
       image:
         'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1200&auto=format&fit=crop',
     },
@@ -79,7 +81,7 @@ export default function Home() {
       name: 'Bamboo Crafts',
       category: 'Native Handicrafts',
       description:
-        'Locally woven bamboo baskets, furniture, and decorative crafts showcasing the creativity of Tanauan artisans.',
+        'Locally woven bamboo baskets and decorative crafts.',
       image:
         'https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?q=80&w=1200&auto=format&fit=crop',
     },
@@ -87,36 +89,12 @@ export default function Home() {
       name: 'Dried Fish Products',
       category: 'Seafood Delicacies',
       description:
-        'Fresh and flavorful dried fish products prepared by coastal communities using traditional preservation methods.',
+        'Fresh and flavorful dried fish products prepared traditionally.',
       image:
         'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?q=80&w=1200&auto=format&fit=crop',
     },
-    {
-      name: 'Native Delicacies',
-      category: 'Local Food Products',
-      description:
-        'Taste authentic Leyte delicacies including suman, binagol, moron, and other locally loved delicacies.',
-      image:
-        'https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop',
-    },
-    {
-      name: 'Handwoven Products',
-      category: 'Traditional Weaving',
-      description:
-        'Beautiful woven mats, bags, and native products created from locally sourced materials.',
-      image:
-        'https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200&auto=format&fit=crop',
-    },
-    {
-      name: 'Seafood Specialties',
-      category: 'Local Industry',
-      description:
-        'Fresh seafood products and coastal specialties that reflect the rich marine resources of Tanauan.',
-      image:
-        'https://images.unsplash.com/photo-1510130387422-82bed34b37e9?q=80&w=1200&auto=format&fit=crop',
-    },
   ]
-}
+
   return (
     <main className="relative bg-gradient-to-br from-sky-200 via-cyan-100 to-orange-100 text-slate-900 overflow-hidden">
 
@@ -129,9 +107,7 @@ export default function Home() {
           className="w-[900px] md:w-[1200px] opacity-[0.08] blur-md animate-pulse"
         />
 
-        {/* EXTRA GLOW */}
         <div className="absolute inset-0 bg-white/20 backdrop-blur-[2px]" />
-
       </div>
 
       {/* FLOATING BLOBS */}
@@ -141,7 +117,7 @@ export default function Home() {
 
       <div className="absolute bottom-0 left-1/3 w-[450px] h-[450px] bg-pink-300/20 rounded-full blur-[150px] animate-pulse" />
 
-      {/* HERO SECTION */}
+      {/* HERO */}
       <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden z-10">
 
         <div
@@ -155,7 +131,6 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-sky-900/60 via-cyan-500/20 to-orange-200/40" />
 
         <div className="relative z-10 max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-
 
           {/* LEFT CONTENT */}
           <div>
@@ -171,9 +146,8 @@ export default function Home() {
             </h1>
 
             <p className="text-lg text-slate-700 font-medium leading-relaxed max-w-xl mb-8">
-              Explore breathtaking beaches, rich cultural history, scenic
-              landscapes, local festivals, and relaxing resorts in the beautiful
-              municipality of Tanauan, Leyte.
+              Explore breathtaking beaches, rich cultural history, scenic landscapes,
+              local festivals, and relaxing resorts in Tanauan, Leyte.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -187,7 +161,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* UPLOAD PHOTO SLOT */}
+          {/* UPLOAD */}
           <div className="relative">
             <div className="bg-white/30 backdrop-blur-xl border border-white/30 rounded-[2rem] p-6 shadow-2xl">
 
@@ -202,8 +176,7 @@ export default function Home() {
                 </h2>
 
                 <p className="text-slate-700 mb-6 max-w-sm">
-                  Replace this section with your own tourism image or featured
-                  destination photo for Tanauan Leyte.
+                  Replace this section with your own tourism image.
                 </p>
 
                 <label className="cursor-pointer px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white hover:scale-105 transition-all font-medium shadow-xl">
@@ -218,7 +191,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* DASHBOARD STATS */}
+      {/* STATS */}
       <section className="px-6 py-20 relative z-10">
         <div className="max-w-7xl mx-auto">
 
@@ -251,170 +224,164 @@ export default function Home() {
       </section>
 
       {/* TOURIST SPOTS */}
-<section className="px-6 py-20 relative z-10">
+      <section className="px-6 py-20 relative z-10">
 
-  <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto">
 
-    <div className="text-center mb-16">
-      <p className="text-sky-900 uppercase tracking-[0.3em] mb-3 text-sm font-bold">
-        Destinations
-      </p>
+          <div className="text-center mb-16">
+            <p className="text-sky-900 uppercase tracking-[0.3em] mb-3 text-sm font-bold">
+              Destinations
+            </p>
 
-      <h2 className="text-5xl font-black mb-6 bg-gradient-to-r from-sky-900 via-cyan-600 to-orange-500 bg-clip-text text-transparent">
-        Tourist Spots
-      </h2>
-
-      <p className="text-slate-700 max-w-2xl mx-auto text-lg">
-        Experience the beauty and hidden gems of Tanauan Leyte through its
-        beaches, landmarks, and nature attractions.
-      </p>
-    </div>
-
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-      {touristSpots.map((spot, index) => (
-
-        <div
-          key={index}
-          className="group bg-white/30 backdrop-blur-xl rounded-[2rem] overflow-hidden border border-white/30 hover:-translate-y-4 hover:shadow-[0_20px_60px_rgba(0,0,0,0.25)] transition-all duration-700"
-        >
-
-          <div className="overflow-hidden h-64">
-            <img
-              src={spot.image}
-              alt={spot.name}
-              className="w-full h-full object-cover group-hover:scale-110 group-hover:rotate-1 transition-all duration-700"
-            />
+            <h2 className="text-5xl font-black mb-6 bg-gradient-to-r from-sky-900 via-cyan-600 to-orange-500 bg-clip-text text-transparent">
+              Tourist Spots
+            </h2>
           </div>
 
-          <div className="p-6">
-            <h3 className="text-2xl font-bold mb-3">
-              {spot.name}
-            </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <p className="text-slate-700 leading-relaxed">
-              {spot.description}
-            </p>
+            {touristSpots.map((spot, index) => (
+
+              <div
+                key={index}
+                className="group bg-white/30 backdrop-blur-xl rounded-[2rem] overflow-hidden border border-white/30 hover:-translate-y-4 hover:shadow-[0_20px_60px_rgba(0,0,0,0.25)] transition-all duration-700"
+              >
+
+                <div className="overflow-hidden h-64">
+                  <img
+                    src={spot.image}
+                    alt={spot.name}
+                    className="w-full h-full object-cover group-hover:scale-110 group-hover:rotate-1 transition-all duration-700"
+                  />
+                </div>
+
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold mb-3">
+                    {spot.name}
+                  </h3>
+
+                  <p className="text-slate-700 leading-relaxed">
+                    {spot.description}
+                  </p>
+                </div>
+
+              </div>
+
+            ))}
+
           </div>
 
         </div>
+      </section>
 
-      ))}
+      {/* RESORTS */}
+      <section className="px-6 py-20 relative z-10">
 
-    </div>
+        <div className="max-w-7xl mx-auto">
 
-  </div>
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16">
 
-</section>
+            <div>
+              <p className="text-sky-900 uppercase tracking-[0.3em] mb-3 text-sm font-bold">
+                Relax & Stay
+              </p>
 
-{/* RESORTS */}
-<section className="px-6 py-20 relative z-10">
-
-  <div className="max-w-7xl mx-auto">
-
-    <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16">
-
-      <div>
-        <p className="text-sky-900 uppercase tracking-[0.3em] mb-3 text-sm font-bold">
-          Relax & Stay
-        </p>
-
-        <h2 className="text-5xl font-black mb-4 bg-gradient-to-r from-sky-900 via-cyan-600 to-orange-500 bg-clip-text text-transparent">
-          Available Resorts
-        </h2>
-      </div>
-
-      <p className="text-slate-700 max-w-xl text-lg">
-        Enjoy luxurious accommodations, family-friendly resorts, and scenic
-        beachfront stays perfect for your Leyte getaway.
-      </p>
-
-    </div>
-
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-      {resorts.map((resort, index) => (
-
-        <a
-          key={index}
-          href={resort.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="relative rounded-[2rem] overflow-hidden group h-[420px] hover:-translate-y-4 transition-all duration-700 shadow-2xl block"
-        >
-
-          <img
-            src={resort.image}
-            alt={resort.name}
-            className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
-          />
-
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
-
-          <div className="absolute bottom-0 p-8 z-10 text-white w-full">
-
-            <p className="text-yellow-300 mb-2 font-semibold tracking-wide">
-              {resort.type}
-            </p>
-
-            <h3 className="text-3xl font-black mb-4">
-              {resort.name}
-            </h3>
-
-            <button className="px-5 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:scale-105 transition-all duration-300 font-semibold shadow-xl">
-              Book Now! For Reservations
-            </button>
+              <h2 className="text-5xl font-black mb-4 bg-gradient-to-r from-sky-900 via-cyan-600 to-orange-500 bg-clip-text text-transparent">
+                Available Resorts
+              </h2>
+            </div>
 
           </div>
 
-        </a>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      ))}
+            {resorts.map((resort, index) => (
 
-    </div>
+              <a
+                key={index}
+                href={resort.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative rounded-[2rem] overflow-hidden group h-[420px] hover:-translate-y-4 transition-all duration-700 shadow-2xl block"
+              >
 
-  </div>
+                <img
+                  src={resort.image}
+                  alt={resort.name}
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
+                />
 
-</section>
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
 
-  
+                <div className="absolute bottom-0 p-8 z-10 text-white w-full">
 
-      {/* HISTORY */}
+                  <p className="text-yellow-300 mb-2 font-semibold tracking-wide">
+                    {resort.type}
+                  </p>
+
+                  <h3 className="text-3xl font-black mb-4">
+                    {resort.name}
+                  </h3>
+
+                </div>
+
+              </a>
+
+            ))}
+
+          </div>
+
+        </div>
+      </section>
+
+      {/* PRODUCTS */}
       <section className="px-6 py-24 relative z-10">
 
-        <div className="max-w-5xl mx-auto text-center">
+        <div className="max-w-7xl mx-auto">
 
-          <p className="text-sky-900 uppercase tracking-[0.3em] mb-4 text-sm font-bold">
-            Historical Background
-          </p>
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-black mb-6 bg-gradient-to-r from-sky-900 via-cyan-600 to-orange-500 bg-clip-text text-transparent">
+              Local Products
+            </h2>
+          </div>
 
-          <h2 className="text-5xl font-black mb-8 bg-gradient-to-r from-sky-900 via-cyan-600 to-orange-500 bg-clip-text text-transparent">
-            History of Tanauan Leyte
-          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-          <div className="bg-white/30 backdrop-blur-xl border border-white/30 rounded-[2rem] p-10 text-left leading-relaxed text-slate-700 text-lg space-y-6 shadow-2xl">
+            {products.map((product, index) => (
 
-            <p>
-              Tanauan is a municipality located in the province of Leyte in the
-              Eastern Visayas region of the Philippines. The town has a rich
-              history shaped by trade, fishing, agriculture, and strong cultural
-              traditions.
-            </p>
+              <div
+                key={index}
+                className="group bg-white/30 backdrop-blur-xl rounded-[2rem] overflow-hidden border border-white/30 hover:-translate-y-4 transition-all duration-700 shadow-2xl"
+              >
 
-            <p>
-              During the Spanish colonial period, Tanauan became an important
-              settlement and community hub in Leyte. Over the years, the town
-              developed through local commerce and the resilience of its people.
-            </p>
+                <div className="overflow-hidden h-64">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
+                  />
+                </div>
 
-            <p>
-              Tanauan also played a significant role during World War II as Leyte
-              became one of the important locations during the liberation of the
-              Philippines. Today, the municipality continues to grow while
-              preserving its heritage, festivals, and natural attractions.
-            </p>
+                <div className="p-6">
+                  <p className="text-cyan-700 font-semibold mb-2">
+                    {product.category}
+                  </p>
+
+                  <h3 className="text-2xl font-bold mb-3">
+                    {product.name}
+                  </h3>
+
+                  <p className="text-slate-700 leading-relaxed">
+                    {product.description}
+                  </p>
+                </div>
+
+              </div>
+
+            ))}
 
           </div>
+
         </div>
       </section>
 
@@ -422,23 +389,6 @@ export default function Home() {
       <section className="px-6 py-24 relative z-10">
 
         <div className="max-w-7xl mx-auto">
-
-          <div className="text-center mb-16">
-
-            <p className="text-sky-900 uppercase tracking-[0.3em] mb-4 text-sm font-bold">
-              Celebrations
-            </p>
-
-            <h2 className="text-5xl font-black mb-6 bg-gradient-to-r from-sky-900 via-cyan-600 to-orange-500 bg-clip-text text-transparent">
-              Festivals of Tanauan Leyte
-            </h2>
-
-            <p className="text-slate-700 text-lg max-w-2xl mx-auto">
-              Discover the vibrant culture and traditions celebrated throughout
-              the year in Tanauan Leyte.
-            </p>
-
-          </div>
 
           <div className="space-y-8">
 
@@ -462,10 +412,6 @@ export default function Home() {
                   </div>
 
                   <div className="text-right">
-                    <p className="text-slate-600 font-bold text-sm uppercase tracking-widest mb-2">
-                      Celebration Month
-                    </p>
-
                     <h4 className="text-4xl font-black text-sky-900">
                       {festival.month}
                     </h4>
@@ -478,6 +424,7 @@ export default function Home() {
             ))}
 
           </div>
+
         </div>
       </section>
 
