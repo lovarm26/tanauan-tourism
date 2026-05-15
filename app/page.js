@@ -117,88 +117,90 @@ export default function Home() {
 
       <div className="absolute bottom-0 left-1/3 w-[450px] h-[450px] bg-pink-300/20 rounded-full blur-[150px] animate-pulse" />
 
-      {/* HERO */}
-      <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden z-10">
+     {/* HERO */}
+<section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden z-10">
 
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-40"
-          style={{
-            backgroundImage:
-              "url('https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/tanauan.png')",
-          }}
-        />
+  <div
+    className="absolute inset-0 bg-cover bg-center opacity-40"
+    style={{
+      backgroundImage:
+        "url('https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/tanauan.png')",
+    }}
+  />
 
-        <div className="absolute inset-0 bg-gradient-to-b from-sky-900/60 via-cyan-500/20 to-orange-200/40" />
+  <div className="absolute inset-0 bg-gradient-to-b from-sky-900/60 via-cyan-500/20 to-orange-200/40" />
 
-        <div className="relative z-10 max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+  <div className="relative z-10 max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
 
-          {/* LEFT CONTENT */}
-          <div>
-            <p className="uppercase tracking-[0.3em] text-sky-900 font-bold mb-4 text-sm">
-              Welcome to Eastern Visayas
-            </p>
-
-            <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6 drop-shadow-[0_10px_30px_rgba(255,255,255,0.4)]">
-              Discover
-              <span className="block bg-gradient-to-r from-sky-900 via-cyan-600 to-orange-500 bg-clip-text text-transparent">
-                Tanauan Leyte
-              </span>
-            </h1>
-
-            <p className="text-lg text-slate-700 font-medium leading-relaxed max-w-xl mb-8">
-              Explore breathtaking beaches, rich cultural history, scenic landscapes,
-              local festivals, and relaxing resorts in Tanauan, Leyte.
-            </p>
-
-            <div className="flex flex-wrap gap-4">
-              <button className="px-8 py-4 rounded-2xl bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-600 text-white hover:scale-105 hover:-translate-y-1 transition-all duration-300 font-semibold shadow-[0_15px_40px_rgba(14,165,233,0.45)]">
-                Explore Tourist Spots
-              </button>
-
-              <button className="px-8 py-4 rounded-2xl border border-white/40 bg-white/20 backdrop-blur-lg hover:bg-white/30 transition-all duration-300 font-semibold">
-                View Resorts
-              </button>
-            </div>
-          </div>
-
-          {/* UPLOAD */}
-         {/* HERO IMAGE / VIDEO */}
-<div className="relative">
-  <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-[2rem] p-4 shadow-2xl overflow-hidden">
-
-    {/* VIDEO */}
-    <video
-      autoPlay
-      muted
-      loop
-      playsInline
-      className="w-full h-[420px] object-cover rounded-[1.5rem] hover:scale-[1.02] transition-all duration-700"
-    >
-      <source
-        src="https://cdn.coverr.co/videos/coverr-tropical-beach-aerial-view-1560129401198?download=1080p"
-        type="video/mp4"
-      />
-    </video>
-
-    {/* OPTIONAL OVERLAY */}
-    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-[2rem]" />
-
-    {/* TEXT OVERLAY */}
-    <div className="absolute bottom-10 left-10 text-white z-10">
-      <p className="uppercase tracking-[0.3em] text-sm mb-2 font-semibold">
-        Experience Nature
+    {/* LEFT CONTENT */}
+    <div>
+      <p className="uppercase tracking-[0.3em] text-sky-900 font-bold mb-4 text-sm">
+        Welcome to Eastern Visayas
       </p>
 
-      <h2 className="text-4xl font-black drop-shadow-xl">
-        Beautiful Tanauan Leyte
-      </h2>
+      <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6 drop-shadow-[0_10px_30px_rgba(255,255,255,0.4)]">
+        Discover
+        <span className="block bg-gradient-to-r from-sky-900 via-cyan-600 to-orange-500 bg-clip-text text-transparent">
+          Tanauan Leyte
+        </span>
+      </h1>
+
+      <p className="text-lg text-slate-700 font-medium leading-relaxed max-w-xl mb-8">
+        Explore breathtaking beaches, rich cultural history, scenic landscapes,
+        local festivals, and relaxing resorts in Tanauan, Leyte.
+      </p>
+
+      <div className="flex flex-wrap gap-4">
+        <button className="px-8 py-4 rounded-2xl bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-600 text-white hover:scale-105 hover:-translate-y-1 transition-all duration-300 font-semibold shadow-[0_15px_40px_rgba(14,165,233,0.45)]">
+          Explore Tourist Spots
+        </button>
+
+        <button className="px-8 py-4 rounded-2xl border border-white/40 bg-white/20 backdrop-blur-lg hover:bg-white/30 transition-all duration-300 font-semibold">
+          View Resorts
+        </button>
+      </div>
+    </div>
+
+    {/* HERO IMAGE / VIDEO */}
+    <div className="relative">
+      <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-[2rem] p-4 shadow-2xl overflow-hidden">
+
+        {/* VIDEO */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-[420px] object-cover rounded-[1.5rem] hover:scale-[1.02] transition-all duration-700"
+        >
+          <source
+            src="https://videos.pexels.com/video-files/855289/855289-hd_1920_1080_25fps.mp4"
+            type="video/mp4"
+          />
+        </video>
+
+        {/* OVERLAY */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent rounded-[2rem]" />
+
+        {/* TEXT OVERLAY */}
+        <div className="absolute bottom-10 left-10 text-white z-10">
+          <p className="uppercase tracking-[0.3em] text-sm mb-2 font-semibold">
+            Experience Nature
+          </p>
+
+          <h2 className="text-4xl font-black drop-shadow-xl">
+            Beautiful Tanauan Leyte
+          </h2>
+        </div>
+
+      </div>
     </div>
 
   </div>
-</div>
+</section>
 
-      {/* STATS */}
-      <section className="px-6 py-20 relative z-10">
+{/* STATS */}
+<section className="px-6 py-20 relative z-10">
         <div className="max-w-7xl mx-auto">
 
           <div className="grid md:grid-cols-4 gap-6">
@@ -299,56 +301,50 @@ export default function Home() {
 
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            {resorts.map((resort, index) => (
+  {resorts.map((resort, index) => (
 
-              <a
-                key={index}
-                href={resort.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="relative rounded-[2rem] overflow-hidden group h-[420px] hover:-translate-y-4 transition-all duration-700 shadow-2xl block"
-              >
+    <div
+      key={index}
+      className="relative rounded-[2rem] overflow-hidden group h-[420px] hover:-translate-y-4 transition-all duration-700 shadow-2xl"
+    >
 
-                <img
-                  src={resort.image}
-                  alt={resort.name}
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
-                />
+      <img
+        src={resort.image}
+        alt={resort.name}
+        className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
+      />
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
 
-               <div className="absolute bottom-0 p-8 z-10 text-white w-full">
+      <div className="absolute bottom-0 p-8 z-10 text-white w-full">
 
-  <p className="text-yellow-300 mb-2 font-semibold tracking-wide">
-    {resort.type}
-  </p>
+        <p className="text-yellow-300 mb-2 font-semibold tracking-wide">
+          {resort.type}
+        </p>
 
-  <h3 className="text-3xl font-black mb-4">
-    {resort.name}
-  </h3>
+        <h3 className="text-3xl font-black mb-4">
+          {resort.name}
+        </h3>
 
-  {/* BOOK NOW BUTTON */}
-  <a
-    href={resort.link}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-block mt-3 px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:scale-105 transition-all duration-300 font-semibold shadow-xl"
-  >
-    Book Now!
-  </a>
+        {/* BOOK NOW BUTTON */}
+        <a
+          href={resort.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block mt-3 px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:scale-105 transition-all duration-300 font-semibold shadow-xl"
+        >
+          Book Now!
+        </a>
+
+      </div>
+
+    </div>
+
+  ))}
 
 </div>
-
-              </a>
-
-            ))}
-
-          </div>
-
-        </div>
-      </section>
 
       {/* PRODUCTS */}
       <section className="px-6 py-24 relative z-10">
