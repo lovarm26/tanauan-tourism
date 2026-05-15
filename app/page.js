@@ -91,7 +91,7 @@ export default function Home() {
       description:
         'Fresh and flavorful dried fish products prepared traditionally.',
       image:
-        'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?q=80&w=1200&auto=format&fit=crop',
+        'https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/dried.png',
     },
   ]
 
