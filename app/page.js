@@ -23,21 +23,21 @@ export default function Home() {
   const resorts = [
     {
       name: 'Haiyan Peak Resort',
-      type: 'Beach Resort',
+      type: 'Luxury Stay',
       image:
-        'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1600&auto=format&fit=crop',
+        'https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/payag.png',
     },
     {
       name: 'Payag ni Lolo Iri',
       type: 'Family Resort',
       image:
-        'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1600&auto=format&fit=crop',
+        'https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/payagnilolo.png',
     },
     {
-      name: 'Hidden Beach Resort',
-      type: 'Luxury Stay',
+      name: 'Playa Alegre',
+      type: 'Beach & Pool Experience',
       image:
-        'https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?q=80&w=1600&auto=format&fit=crop',
+        'https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/playa.png',
     },
   ]
 
