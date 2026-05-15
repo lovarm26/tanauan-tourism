@@ -65,6 +65,64 @@ export default function Home() {
     },
   ]
 
+   // FIXED PRODUCTS ARRAY
+  const products = [
+    {
+      name: 'Traditional Pottery',
+      category: 'Clay Craftsmanship',
+      description:
+        'Handmade clay pots, jars, and decorative pottery crafted by local artisans using traditional techniques.',
+      image:
+        'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1200&auto=format&fit=crop',
+    },
+    {
+      name: 'Bamboo Crafts',
+      category: 'Native Handicrafts',
+      description:
+        'Locally woven bamboo baskets, furniture, and decorative crafts showcasing the creativity of Tanauan artisans.',
+      image:
+        'https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?q=80&w=1200&auto=format&fit=crop',
+    },
+    {
+      name: 'Dried Fish Products',
+      category: 'Seafood Delicacies',
+      description:
+        'Fresh and flavorful dried fish products prepared by coastal communities using traditional preservation methods.',
+      image:
+        'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?q=80&w=1200&auto=format&fit=crop',
+    },
+    {
+      name: 'Native Delicacies',
+      category: 'Local Food Products',
+      description:
+        'Taste authentic Leyte delicacies including suman, binagol, moron, and other locally loved delicacies.',
+      image:
+        'https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop',
+    },
+    {
+      name: 'Handwoven Products',
+      category: 'Traditional Weaving',
+      description:
+        'Beautiful woven mats, bags, and native products created from locally sourced materials.',
+      image:
+        'https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200&auto=format&fit=crop',
+    },
+    {
+      name: 'Seafood Specialties',
+      category: 'Local Industry',
+      description:
+        'Fresh seafood products and coastal specialties that reflect the rich marine resources of Tanauan.',
+      image:
+        'https://images.unsplash.com/photo-1510130387422-82bed34b37e9?q=80&w=1200&auto=format&fit=crop',
+    },
+  ]
+
+  return (
+    <main>
+      {/* YOUR JSX HERE */}
+    </main>
+  )
+}
   return (
     <main className="relative bg-gradient-to-br from-sky-200 via-cyan-100 to-orange-100 text-slate-900 overflow-hidden">
 
@@ -325,64 +383,7 @@ export default function Home() {
 
 </section>
 
-   // FIXED PRODUCTS ARRAY
-  const products = [
-    {
-      name: 'Traditional Pottery',
-      category: 'Clay Craftsmanship',
-      description:
-        'Handmade clay pots, jars, and decorative pottery crafted by local artisans using traditional techniques.',
-      image:
-        'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1200&auto=format&fit=crop',
-    },
-    {
-      name: 'Bamboo Crafts',
-      category: 'Native Handicrafts',
-      description:
-        'Locally woven bamboo baskets, furniture, and decorative crafts showcasing the creativity of Tanauan artisans.',
-      image:
-        'https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?q=80&w=1200&auto=format&fit=crop',
-    },
-    {
-      name: 'Dried Fish Products',
-      category: 'Seafood Delicacies',
-      description:
-        'Fresh and flavorful dried fish products prepared by coastal communities using traditional preservation methods.',
-      image:
-        'https://images.unsplash.com/photo-1544943910-4c1dc44aab44?q=80&w=1200&auto=format&fit=crop',
-    },
-    {
-      name: 'Native Delicacies',
-      category: 'Local Food Products',
-      description:
-        'Taste authentic Leyte delicacies including suman, binagol, moron, and other locally loved delicacies.',
-      image:
-        'https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop',
-    },
-    {
-      name: 'Handwoven Products',
-      category: 'Traditional Weaving',
-      description:
-        'Beautiful woven mats, bags, and native products created from locally sourced materials.',
-      image:
-        'https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1200&auto=format&fit=crop',
-    },
-    {
-      name: 'Seafood Specialties',
-      category: 'Local Industry',
-      description:
-        'Fresh seafood products and coastal specialties that reflect the rich marine resources of Tanauan.',
-      image:
-        'https://images.unsplash.com/photo-1510130387422-82bed34b37e9?q=80&w=1200&auto=format&fit=crop',
-    },
-  ]
-
-  return (
-    <main>
-      {/* YOUR JSX HERE */}
-    </main>
-  )
-}
+  
 
       {/* HISTORY */}
       <section className="px-6 py-24 relative z-10">
