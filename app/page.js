@@ -65,6 +65,20 @@ export default function Home() {
   return (
     <main className="relative bg-gradient-to-br from-sky-200 via-cyan-100 to-orange-100 text-slate-900 overflow-hidden">
 
+      {/* BLURRED LOGO BACKGROUND */}
+      <div className="fixed inset-0 z-0 flex items-center justify-center pointer-events-none overflow-hidden">
+
+        <img
+          src="/tanauan_logo.jpg"
+          alt="Tanauan Logo Background"
+          className="w-[900px] md:w-[1200px] opacity-[0.08] blur-md animate-pulse"
+        />
+
+        {/* EXTRA GLOW */}
+        <div className="absolute inset-0 bg-white/20 backdrop-blur-[2px]" />
+
+      </div>
+
       {/* FLOATING BLOBS */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-cyan-400/30 rounded-full blur-[150px] animate-pulse" />
 
@@ -73,7 +87,7 @@ export default function Home() {
       <div className="absolute bottom-0 left-1/3 w-[450px] h-[450px] bg-pink-300/20 rounded-full blur-[150px] animate-pulse" />
 
       {/* HERO SECTION */}
-      <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden z-10">
 
         <div
           className="absolute inset-0 bg-cover bg-center opacity-40"
@@ -86,6 +100,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-sky-900/60 via-cyan-500/20 to-orange-200/40" />
 
         <div className="relative z-10 max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+
 
           {/* LEFT CONTENT */}
           <div>
