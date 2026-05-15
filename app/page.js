@@ -395,10 +395,66 @@ export default function Home() {
         </div>
       </section>
 
+     {/* HISTORY */}
+      <section className="px-6 py-24 relative z-10">
+
+        <div className="max-w-5xl mx-auto text-center">
+
+          <p className="text-sky-900 uppercase tracking-[0.3em] mb-4 text-sm font-bold">
+            Historical Background
+          </p>
+
+          <h2 className="text-5xl font-black mb-8 bg-gradient-to-r from-sky-900 via-cyan-600 to-orange-500 bg-clip-text text-transparent">
+            History of Tanauan Leyte
+          </h2>
+
+          <div className="bg-white/30 backdrop-blur-xl border border-white/30 rounded-[2rem] p-10 text-left leading-relaxed text-slate-700 text-lg space-y-6 shadow-2xl">
+
+            <p>
+              Tanauan is a municipality located in the province of Leyte in the
+              Eastern Visayas region of the Philippines. The town has a rich
+              history shaped by trade, fishing, agriculture, and strong cultural
+              traditions.
+            </p>
+
+            <p>
+              During the Spanish colonial period, Tanauan became an important
+              settlement and community hub in Leyte. Over the years, the town
+              developed through local commerce and the resilience of its people.
+            </p>
+
+            <p>
+              Tanauan also played a significant role during World War II as Leyte
+              became one of the important locations during the liberation of the
+              Philippines. Today, the municipality continues to grow while
+              preserving its heritage, festivals, and natural attractions.
+            </p>
+
+          </div>
+        </div>
+      </section>
+
       {/* FESTIVALS */}
       <section className="px-6 py-24 relative z-10">
 
         <div className="max-w-7xl mx-auto">
+
+          <div className="text-center mb-16">
+
+            <p className="text-sky-900 uppercase tracking-[0.3em] mb-4 text-sm font-bold">
+              Celebrations
+            </p>
+
+            <h2 className="text-5xl font-black mb-6 bg-gradient-to-r from-sky-900 via-cyan-600 to-orange-500 bg-clip-text text-transparent">
+              Festivals of Tanauan Leyte
+            </h2>
+
+            <p className="text-slate-700 text-lg max-w-2xl mx-auto">
+              Discover the vibrant culture and traditions celebrated throughout
+              the year in Tanauan Leyte.
+            </p>
+
+          </div>
 
           <div className="space-y-8">
 
@@ -422,6 +478,10 @@ export default function Home() {
                   </div>
 
                   <div className="text-right">
+                    <p className="text-slate-600 font-bold text-sm uppercase tracking-widest mb-2">
+                      Celebration Month
+                    </p>
+
                     <h4 className="text-4xl font-black text-sky-900">
                       {festival.month}
                     </h4>
@@ -434,7 +494,6 @@ export default function Home() {
             ))}
 
           </div>
-
         </div>
       </section>
 
