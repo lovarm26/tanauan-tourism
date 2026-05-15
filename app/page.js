@@ -199,9 +199,7 @@ export default function Home() {
       </section>
 
       {/* TOURIST SPOTS */}
-      <section className="px-6 py-20 relative z-10">
-
-        <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto">
 
           <div className="text-center mb-16">
             <p className="text-sky-900 uppercase tracking-[0.3em] mb-3 text-sm font-bold">
