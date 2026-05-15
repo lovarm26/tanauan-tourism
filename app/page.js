@@ -349,9 +349,6 @@ export default function Home() {
     </div>
 
     {/* PRODUCTS ARRAY */}
-    {/*
-      Add this array above return()
-
       const products = [
         {
           name: 'Traditional Pottery',
