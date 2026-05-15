@@ -345,6 +345,8 @@ export default function Home() {
   ))}
 
 </div>
+ </div>
+</section>
 
       {/* PRODUCTS */}
       <section className="px-6 py-24 relative z-10">
