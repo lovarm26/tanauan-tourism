@@ -43,10 +43,10 @@ export default function Home() {
 
   const festivals = [
     {
-      name: 'Pasaka Festival',
-      month: 'August 14',
+      name: 'Flores de Mayo Celebration',
+      month: 'May',
       description:
-        'Is a vibrant street spectacle honoring Our Lady of Assumption and inviting future progress, health, and fortune. The celebration also highlights Tanauan’s traditional livelihoods by proudly showcasing local pottery, banig weaving, farming, and fishing..',
+        'A colorful and faith-filled celebration honoring the Patron Saints and the Blessed Virgin Mary through the traditional Flores de Mayo festivities. The event showcases floral offerings, candle-light processions, cultural performances, and community gatherings that reflect the people’s deep devotion, unity, and rich cultural heritage. The celebration also highlights local traditions, music, and craftsmanship as the town comes alive with joy and thanksgiving throughout the month of May.',
     },
     {
       name: 'Fiesta Celebration of Tanauan',
