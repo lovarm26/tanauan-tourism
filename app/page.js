@@ -49,7 +49,7 @@ export default function Home() {
       name: 'Flores de Mayo Celebration',
       month: 'May',
       description:
-        'A colorful and faith-filled celebration honoring the Patron Saints and the Blessed Virgin Mary through the traditional Flores de Mayo festivities, featuring floral offerings, candle-light processions, cultural performances, and community gatherings that reflect the people’s deep devotion, unity, and rich cultural heritage. Throughout the month of May, the town comes alive with joy and thanksgiving as the celebration highlights local traditions, music, and craftsmanship while strengthening the community’s spirit of faith and culture.',
+        'A colorful and faith-filled celebration honoring the Patron Saints and the Blessed Virgin Mary through the traditional Flores de Mayo festivities. The event highlights floral offerings, candle-light processions, local traditions, music, and cultural performances that reflect the community’s devotion, unity, and rich heritage throughout the month of May.',
     },
     {
       name: 'Fiesta Celebration of Tanauan',
