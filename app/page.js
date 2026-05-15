@@ -21,25 +21,28 @@ export default function Home() {
   ]
 
   const resorts = [
-    {
-      name: 'Haiyan Peak Resort',
-      type: 'Luxury Stay',
-      image:
-        'https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/payag.png',
-    },
-    {
-      name: 'Payag ni Lolo Iri',
-      type: 'Family Resort',
-      image:
-        'https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/payagnilolo.png',
-    },
-    {
-      name: 'Playa Alegre',
-      type: 'Beach & Pool Experience',
-      image:
-        'https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/playa.png',
-    },
-  ]
+  {
+    name: 'Haiyan Peak Resort',
+    type: 'Luxury Stay',
+    image:
+      'https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/payag.png',
+    link: 'https://www.facebook.com/haiyanhotelresort/',
+  },
+  {
+    name: 'Payag ni Lolo Iri',
+    type: 'Family Resort',
+    image:
+      'https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/payagnilolo.png',
+    link: 'https://www.facebook.com/payagniloloiri',
+  },
+  {
+    name: 'Playa Alegre',
+    type: 'Beach & Pool Experience',
+    image:
+      'https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/playa.png',
+    link: 'https://www.facebook.com/PlayaAlegreLeyte',
+  },
+]
 
   const festivals = [
     {
@@ -253,59 +256,47 @@ export default function Home() {
       {/* RESORTS */}
       <section className="px-6 py-20 relative z-10">
 
-        <div className="max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16">
+  {resorts.map((resort, index) => (
 
-            <div>
-              <p className="text-sky-900 uppercase tracking-[0.3em] mb-3 text-sm font-bold">
-                Relax & Stay
-              </p>
+    <a
+      key={index}
+      href={resort.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="relative rounded-[2rem] overflow-hidden group h-[420px] hover:-translate-y-4 transition-all duration-700 shadow-2xl block"
+    >
 
-              <h2 className="text-5xl font-black mb-4 bg-gradient-to-r from-sky-900 via-cyan-600 to-orange-500 bg-clip-text text-transparent">
-                Available Resorts
-              </h2>
-            </div>
+      <img
+        src={resort.image}
+        alt={resort.name}
+        className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
+      />
 
-            <p className="text-slate-700 max-w-xl text-lg">
-              Enjoy luxurious accommodations, family-friendly resorts, and scenic
-              beachfront stays perfect for your Leyte getaway.
-            </p>
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
 
-          </div>
+      <div className="absolute bottom-0 p-8 z-10 text-white w-full">
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <p className="text-yellow-300 mb-2 font-semibold tracking-wide">
+          {resort.type}
+        </p>
 
-            {resorts.map((resort, index) => (
+        <h3 className="text-3xl font-black mb-4">
+          {resort.name}
+        </h3>
 
-              <div
-                key={index}
-                className="relative rounded-[2rem] overflow-hidden group h-[420px] hover:-translate-y-4 transition-all duration-700 shadow-2xl"
-              >
+        <button className="px-5 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:scale-105 transition-all duration-300 font-semibold shadow-xl">
+          Book Now! For Reservations
+        </button>
 
-                <img
-                  src={resort.image}
-                  alt={resort.name}
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
-                />
+      </div>
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
+    </a>
 
-                <div className="absolute bottom-0 p-8 z-10 text-white">
-                  <p className="text-yellow-300 mb-2 font-semibold tracking-wide">
-                    {resort.type}
-                  </p>
+  ))}
 
-                  <h3 className="text-3xl font-black">
-                    {resort.name}
-                  </h3>
-                </div>
-
-              </div>
-
-            ))}
-
-          </div>
+</div>
         </div>
       </section>
 
