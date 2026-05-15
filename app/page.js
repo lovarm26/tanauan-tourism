@@ -116,12 +116,6 @@ export default function Home() {
         'https://images.unsplash.com/photo-1510130387422-82bed34b37e9?q=80&w=1200&auto=format&fit=crop',
     },
   ]
-
-  return (
-    <main>
-      {/* YOUR JSX HERE */}
-    </main>
-  )
 }
   return (
     <main className="relative bg-gradient-to-br from-sky-200 via-cyan-100 to-orange-100 text-slate-900 overflow-hidden">
