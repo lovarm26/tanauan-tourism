@@ -75,7 +75,7 @@ export default function Home() {
       description:
         'Handmade clay pots, jars, and decorative pottery crafted by local artisans.',
       image:
-        'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1200&auto=format&fit=crop',
+        'https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/claypot.png',
     },
     {
       name: 'Bamboo Crafts',
@@ -83,7 +83,7 @@ export default function Home() {
       description:
         'Locally woven bamboo baskets and decorative crafts.',
       image:
-        'https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?q=80&w=1200&auto=format&fit=crop',
+        'https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/salaset.png',
     },
     {
       name: 'Dried Fish Products',
