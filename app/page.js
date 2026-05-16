@@ -1,4 +1,15 @@
+import { useState, useEffect } from 'react'
+
 export default function Home() {
+  const [darkMode, setDarkMode] = useState(false)
+
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  }, [darkMode])
   const touristSpots = [
     {
       name: 'Sta. Cruz Beach',
@@ -96,7 +107,26 @@ export default function Home() {
   ]
 
   return (
-    <main className="relative bg-gradient-to-br from-sky-200 via-cyan-100 to-orange-100 text-slate-900 overflow-hidden">
+    <main
+  className={`relative overflow-hidden transition-all duration-500 ${
+    darkMode
+      ? 'bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 text-white'
+      : 'bg-gradient-to-br from-sky-200 via-cyan-100 to-orange-100 text-slate-900'
+  }`}
+>
+{/* DARK MODE BUTTON */}
+<div className="fixed top-6 right-6 z-[999]">
+  <button
+    onClick={() => setDarkMode(!darkMode)}
+    className={`px-5 py-3 rounded-2xl font-semibold backdrop-blur-xl border transition-all duration-300 shadow-2xl ${
+      darkMode
+        ? 'bg-gray-800 border-gray-600 text-white hover:bg-gray-700'
+        : 'bg-white/30 border-white/40 text-slate-900 hover:bg-white/50'
+    }`}
+  >
+    {darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
+  </button>
+</div>
 
       {/* BLURRED LOGO BACKGROUND */}
       <div className="fixed inset-0 z-0 flex items-center justify-center pointer-events-none overflow-hidden">
@@ -252,7 +282,11 @@ export default function Home() {
 
               <div
                 key={index}
-                className="group bg-white/30 backdrop-blur-xl rounded-[2rem] overflow-hidden border border-white/30 hover:-translate-y-4 hover:shadow-[0_20px_60px_rgba(0,0,0,0.25)] transition-all duration-700"
+                className={`group backdrop-blur-xl rounded-[2rem] transition-all duration-500 ${
+  darkMode
+    ? 'bg-gray-900/60 border border-gray-700 text-white'
+    : 'bg-white/30 border border-white/30 text-slate-900'
+}`} overflow-hidden border border-white/30 hover:-translate-y-4 hover:shadow-[0_20px_60px_rgba(0,0,0,0.25)] transition-all duration-700"
               >
 
                 <div className="overflow-hidden h-64">
