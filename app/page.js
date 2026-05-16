@@ -5,8 +5,8 @@ import { useState, useEffect } from 'react'
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false)
 
+  // DARK MODE EFFECT
   useEffect(() => {
-    // Make sure window/document exists
     if (typeof window !== 'undefined') {
       if (darkMode) {
         document.documentElement.classList.add('dark')
@@ -15,24 +15,6 @@ export default function Home() {
       }
     }
   }, [darkMode])
-
-  return (
-    <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">
-      <div className="p-10">
-        <button
-          onClick={() => setDarkMode(!darkMode)}
-          className="px-4 py-2 rounded-lg bg-black text-white dark:bg-white dark:text-black"
-        >
-          {darkMode ? 'Light Mode' : 'Dark Mode'}
-        </button>
-
-        <h1 className="mt-6 text-3xl font-bold">
-          Dark Mode Working
-        </h1>
-      </div>
-    </div>
-  )
-}
 
   const touristSpots = [
     {
