@@ -271,22 +271,28 @@ export default function Home() {
 
 <div className="absolute bottom-10 left-10 text-white z-10 overflow-hidden">
 
- <motion.h2
-  initial={{ opacity: 0, y: 40, scale: 0.98, filter: "blur(10px)" }}
-  animate={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
-  transition={{
-    duration: 1.8,
-    ease: [0.25, 0.1, 0.25, 1],
-    delay: 0.2,
+ <motion.div
+  className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white z-10 text-center w-full px-4"
+  animate={{
+    opacity: [0.7, 1, 0.7],
+    y: [0, -4, 0],
   }}
-  className="font-['Cinzel'] font-semibold text-lg md:text-2xl lg:text-3xl leading-snug drop-shadow-2xl max-w-[90%]"
-  style={{
-    letterSpacing: '0.12em',
-    textShadow: '0 0 20px rgba(255,255,255,0.18)',
+  transition={{
+    duration: 3,
+    repeat: Infinity,
+    ease: "easeInOut",
   }}
 >
-  OUR LADY OF<br className="hidden sm:block" /> ASSUMPTION
-</motion.h2>
+  <h2
+    className="font-serif font-semibold text-sm md:text-xl lg:text-2xl drop-shadow-2xl whitespace-nowrap"
+    style={{
+      letterSpacing: "0.18em",
+      textShadow: "0 0 18px rgba(255,255,255,0.25)",
+    }}
+  >
+    OUR LADY OF ASSUMPTION
+  </h2>
+</motion.div>
 
 </div>
 
