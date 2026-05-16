@@ -225,44 +225,40 @@ export default function Home() {
             </div>
           </div>
 
-  {/* HERO VIDEO BACKGROUND */}
-  <div className="absolute inset-0 z-0 overflow-hidden">
+  {/* HERO IMAGE / VIDEO */}
+          <div className="relative">
+            <div className="bg-white/20 dark:bg-white/10 backdrop-blur-xl border border-white/30 dark:border-white/10 rounded-[2rem] p-4 shadow-2xl overflow-hidden">
 
-    <video
-      autoPlay
-      muted
-      loop
-      playsInline
-      preload="auto"
-      className="absolute inset-0 w-full h-full object-cover"
-    >
-      <source
-        src="https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/Assumptionss.mp4"
-        type="video/mp4"
-      />
-    </video>
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full h-[420px] object-cover rounded-[1.5rem] hover:scale-[1.02] transition-all duration-700"
+              >
+                <source
+                  src="https://videos.pexels.com/video-files/855289/855289-hd_1920_1080_25fps.mp4"
+                  type="video/mp4"
+                />
+              </video>
 
-    {/* fallback background in case video fails */}
-    <div className="absolute inset-0 bg-slate-900" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent rounded-[2rem]" />
 
-    {/* DARK OVERLAY */}
-    <div className="absolute inset-0 bg-black/50" />
+              <div className="absolute bottom-10 left-10 text-white z-10">
+                <p className="uppercase tracking-[0.3em] text-sm mb-2 font-semibold">
+                  Experience Nature
+                </p>
 
-    {/* GRADIENT OVERLAY */}
-    <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-slate-950/70" />
+                <h2 className="text-4xl font-black drop-shadow-xl">
+                  Beautiful Tanauan Leyte
+                </h2>
+              </div>
 
-  </div>
+            </div>
+          </div>
 
-  {/* HERO CONTENT */}
-  <div className="relative z-10 text-white text-center px-6">
-
-    <h2 className="text-4xl md:text-6xl font-black drop-shadow-2xl">
-      OUR LADY OF ASSUMPTION
-    </h2>
-
-  </div>
-
-</section>
+        </div>
+      </section>
 {/* STATS */}
 <section className="px-6 py-20 relative z-10">
         <div className="max-w-7xl mx-auto">
