@@ -153,13 +153,13 @@ export default function Home() {
       0 0 10px rgba(56,189,248,0.25);
   }
 `}</style>
-      {/* DARK MODE BUTTON */}
-      <button
-        onClick={() => setDarkMode(!darkMode)}
-        className="fixed top-6 right-6 z-[999] px-5 py-3 rounded-2xl bg-white/20 dark:bg-black/40 backdrop-blur-xl border border-white/30 dark:border-cyan-400/30 shadow-2xl font-semibold hover:scale-105 transition-all duration-300 dark:shadow-[0_0_25px_rgba(56,189,248,0.45)]"
-      >
-        {darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
-      </button>
+     {/* DARK MODE BUTTON */}
+<button
+  onClick={() => setDarkMode(!darkMode)}
+  className="fixed top-4 right-4 z-[999] px-3 py-1.5 rounded-xl bg-white/20 dark:bg-black/40 backdrop-blur-xl border border-white/20 dark:border-cyan-400/20 shadow-lg text-sm font-medium hover:scale-105 transition-all duration-300 dark:shadow-[0_0_12px_rgba(56,189,248,0.35)]"
+>
+  {darkMode ? '☀️ Light' : '🌙 Dark'}
+</button>
 
       {/* BLURRED LOGO BACKGROUND */}
       <div className="fixed inset-0 z-0 flex items-center justify-center pointer-events-none overflow-hidden">
@@ -245,11 +245,11 @@ export default function Home() {
 
               <div className="absolute bottom-10 left-10 text-white z-10">
                 <p className="uppercase tracking-[0.3em] text-sm mb-2 font-semibold">
-                  VIVA SENYORA! MAHAL NA PATRONA!
+                  
                 </p>
 
                 <h2 className="text-4xl font-black">
-                  OUR LADY OF THE ASSUMPTION OF TANAUAN LEYTE
+                  OUR LADY OF ASSUMPTION
                 </h2>
               </div>
 
