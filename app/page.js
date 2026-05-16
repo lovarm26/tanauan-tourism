@@ -224,38 +224,46 @@ export default function Home() {
             </div>
           </div>
 
-{/* HERO VIDEO OVERLAY */}
-<div className="absolute inset-0 z-0 overflow-hidden">
+{/* HERO */}
+<section
+  id="home"
+  className="relative min-h-screen flex items-center justify-center overflow-hidden"
+>
 
-  <video
-    autoPlay
-    muted
-    loop
-    playsInline
-    className="w-full h-full object-cover"
-  >
-    <source
-      src="https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/Assumptionss.mp4"
-      type="video/mp4"
-    />
-  </video>
+  {/* HERO VIDEO OVERLAY BACKGROUND */}
+  <div className="absolute inset-0 z-0 overflow-hidden">
 
-  {/* DARK OVERLAY */}
-  <div className="absolute inset-0 bg-black/50" />
+    <video
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="w-full h-full object-cover"
+    >
+      <source
+        src="https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/Assumptionss.mp4"
+        type="video/mp4"
+      />
+    </video>
 
-  {/* GRADIENT OVERLAY */}
-  <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-slate-950/70" />
+    {/* DARK OVERLAY */}
+    <div className="absolute inset-0 bg-black/50" />
 
-  {/* TITLE */}
-  <div className="absolute bottom-10 left-10 text-white z-10">
+    {/* GRADIENT OVERLAY */}
+    <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-slate-950/70" />
+
+  </div>
+
+  {/* HERO CONTENT (ON TOP OF VIDEO) */}
+  <div className="relative z-10 text-white text-center px-6">
+
     <h2 className="text-4xl md:text-6xl font-black drop-shadow-2xl">
       OUR LADY OF ASSUMPTION
     </h2>
+
   </div>
 
-</div>
-
-
+</section>
 {/* STATS */}
 <section className="px-6 py-20 relative z-10">
         <div className="max-w-7xl mx-auto">
