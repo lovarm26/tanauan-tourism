@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false)
@@ -268,15 +269,26 @@ export default function Home() {
 
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent rounded-[2rem]" />
 
-  <div className="absolute bottom-10 left-10 text-white z-10">
+<div className="absolute bottom-10 left-10 text-white z-10 overflow-hidden">
 
-    <h2
-      className="font-black drop-shadow-xl whitespace-nowrap text-2xl md:text-4xl lg:text-5xl"
+  <motion.h2
+    initial={{ opacity: 0, y: 40, scale: 0.98, filter: "blur(10px)" }}
+    animate={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
+    transition={{
+      duration: 1.8,
+      ease: [0.25, 0.1, 0.25, 1],
+      delay: 0.2,
+    }}
+    className="font-black whitespace-nowrap text-2xl md:text-4xl lg:text-5xl drop-shadow-2xl"
+    style={{
+      letterSpacing: '0.08em',
+      textShadow: '0 0 25px rgba(255,255,255,0.25)',
+    }}
   >
-    OUR LADY OF ASSUMPTION
-    </h2>
+    MAHAL NA PATRONA
+  </motion.h2>
 
-  </div>
+</div>
 
             </div>
           </div>
