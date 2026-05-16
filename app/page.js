@@ -236,7 +236,7 @@ export default function Home() {
                 className="w-full h-[420px] object-cover rounded-[1.5rem] hover:scale-[1.02] transition-all duration-700"
               >
                 <source
-                  src="https://videos.pexels.com/video-files/855289/855289-hd_1920_1080_25fps.mp4"
+                  src="https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/Assumptionss.mp4"
                   type="video/mp4"
                 />
               </video>
@@ -579,19 +579,19 @@ export default function Home() {
 
           <div className="flex gap-6 text-white/90">
 
-            <a href="#" className="hover:text-yellow-300 font-semibold transition-all">
+            <a href="#home" className="hover:text-yellow-300 font-semibold transition-all">
               Home
             </a>
 
-            <a href="#" className="hover:text-yellow-300 font-semibold transition-all">
+            <a href="#tourist-spots" className="hover:text-yellow-300 font-semibold transition-all">
               Tourist Spots
             </a>
 
-            <a href="#" className="hover:text-yellow-300 font-semibold transition-all">
+            <a href="#resorts" className="hover:text-yellow-300 font-semibold transition-all">
               Resorts
             </a>
 
-            <a href="#" className="hover:text-yellow-300 font-semibold transition-all">
+            <a href="#festivals" className="hover:text-yellow-300 font-semibold transition-all">
               Festivals
             </a>
 
