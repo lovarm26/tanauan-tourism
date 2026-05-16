@@ -10,6 +10,7 @@ export default function Home() {
       document.documentElement.classList.remove('dark')
     }
   }, [darkMode])
+
   const touristSpots = [
     {
       name: 'Sta. Cruz Beach',
@@ -107,26 +108,15 @@ export default function Home() {
   ]
 
   return (
-    <main
-  className={`relative overflow-hidden transition-all duration-500 ${
-    darkMode
-      ? 'bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 text-white'
-      : 'bg-gradient-to-br from-sky-200 via-cyan-100 to-orange-100 text-slate-900'
-  }`}
->
-{/* DARK MODE BUTTON */}
-<div className="fixed top-6 right-6 z-[999]">
-  <button
-    onClick={() => setDarkMode(!darkMode)}
-    className={`px-5 py-3 rounded-2xl font-semibold backdrop-blur-xl border transition-all duration-300 shadow-2xl ${
-      darkMode
-        ? 'bg-gray-800 border-gray-600 text-white hover:bg-gray-700'
-        : 'bg-white/30 border-white/40 text-slate-900 hover:bg-white/50'
-    }`}
-  >
-    {darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
-  </button>
-</div>
+    <main className="relative overflow-hidden transition-all duration-500 bg-gradient-to-br from-sky-200 via-cyan-100 to-orange-100 dark:from-slate-950 dark:via-slate-900 dark:to-slate-800 text-slate-900 dark:text-white">
+
+      {/* DARK MODE BUTTON */}
+      <button
+        onClick={() => setDarkMode(!darkMode)}
+        className="fixed top-6 right-6 z-[999] px-5 py-3 rounded-2xl bg-white/20 dark:bg-black/40 backdrop-blur-xl border border-white/30 dark:border-white/10 shadow-2xl font-semibold hover:scale-105 transition-all duration-300"
+      >
+        {darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
+      </button>
 
       {/* BLURRED LOGO BACKGROUND */}
       <div className="fixed inset-0 z-0 flex items-center justify-center pointer-events-none overflow-hidden">
@@ -137,97 +127,94 @@ export default function Home() {
           className="w-[900px] md:w-[1200px] opacity-[0.08] blur-md animate-pulse"
         />
 
-        <div className="absolute inset-0 bg-white/20 backdrop-blur-[2px]" />
+        <div className="absolute inset-0 bg-white/20 dark:bg-black/30 backdrop-blur-[2px]" />
       </div>
 
       {/* FLOATING BLOBS */}
-      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-cyan-400/30 rounded-full blur-[150px] animate-pulse" />
+      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-cyan-400/30 dark:bg-cyan-500/20 rounded-full blur-[150px] animate-pulse" />
 
-      <div className="absolute top-40 right-0 w-[400px] h-[400px] bg-orange-300/30 rounded-full blur-[140px] animate-pulse" />
+      <div className="absolute top-40 right-0 w-[400px] h-[400px] bg-orange-300/30 dark:bg-purple-500/20 rounded-full blur-[140px] animate-pulse" />
 
-      <div className="absolute bottom-0 left-1/3 w-[450px] h-[450px] bg-pink-300/20 rounded-full blur-[150px] animate-pulse" />
+      <div className="absolute bottom-0 left-1/3 w-[450px] h-[450px] bg-pink-300/20 dark:bg-blue-500/20 rounded-full blur-[150px] animate-pulse" />
 
-     {/* HERO */}
-<section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden z-10">
+      {/* HERO */}
+      <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden z-10">
 
-  <div
-    className="absolute inset-0 bg-cover bg-center opacity-40"
-    style={{
-      backgroundImage:
-        "url('https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/tanauan.png')",
-    }}
-  />
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-40"
+          style={{
+            backgroundImage:
+              "url('https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/tanauan.png')",
+          }}
+        />
 
-  <div className="absolute inset-0 bg-gradient-to-b from-sky-900/60 via-cyan-500/20 to-orange-200/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-sky-900/60 via-cyan-500/20 to-orange-200/40 dark:from-black/80 dark:via-slate-900/70 dark:to-slate-900/80" />
 
-  <div className="relative z-10 max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+        <div className="relative z-10 max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
 
-    {/* LEFT CONTENT */}
-    <div>
-      <p className="uppercase tracking-[0.3em] text-sky-900 font-bold mb-4 text-sm">
-        Welcome to Eastern Visayas
-      </p>
+          {/* LEFT CONTENT */}
+          <div>
+            <p className="uppercase tracking-[0.3em] text-sky-900 dark:text-cyan-300 font-bold mb-4 text-sm">
+              Welcome to Eastern Visayas
+            </p>
 
-      <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6 drop-shadow-[0_10px_30px_rgba(255,255,255,0.4)]">
-        Discover
-        <span className="block bg-gradient-to-r from-sky-900 via-cyan-600 to-orange-500 bg-clip-text text-transparent">
-          Tanauan Leyte
-        </span>
-      </h1>
+            <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6 drop-shadow-[0_10px_30px_rgba(255,255,255,0.4)]">
+              Discover
+              <span className="block bg-gradient-to-r from-sky-900 via-cyan-600 to-orange-500 dark:from-cyan-300 dark:via-blue-400 dark:to-purple-400 bg-clip-text text-transparent">
+                Tanauan Leyte
+              </span>
+            </h1>
 
-      <p className="text-lg text-slate-700 font-medium leading-relaxed max-w-xl mb-8">
-        Explore breathtaking beaches, rich cultural history, scenic landscapes,
-        local festivals, and relaxing resorts in Tanauan, Leyte.
-      </p>
+            <p className="text-lg text-slate-700 dark:text-slate-300 font-medium leading-relaxed max-w-xl mb-8">
+              Explore breathtaking beaches, rich cultural history, scenic landscapes,
+              local festivals, and relaxing resorts in Tanauan, Leyte.
+            </p>
 
-      <div className="flex flex-wrap gap-4">
-        <button className="px-8 py-4 rounded-2xl bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-600 text-white hover:scale-105 hover:-translate-y-1 transition-all duration-300 font-semibold shadow-[0_15px_40px_rgba(14,165,233,0.45)]">
-          Explore Tourist Spots
-        </button>
+            <div className="flex flex-wrap gap-4">
+              <button className="px-8 py-4 rounded-2xl bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-600 text-white hover:scale-105 hover:-translate-y-1 transition-all duration-300 font-semibold shadow-[0_15px_40px_rgba(14,165,233,0.45)]">
+                Explore Tourist Spots
+              </button>
 
-        <button className="px-8 py-4 rounded-2xl border border-white/40 bg-white/20 backdrop-blur-lg hover:bg-white/30 transition-all duration-300 font-semibold">
-          View Resorts
-        </button>
-      </div>
-    </div>
+              <button className="px-8 py-4 rounded-2xl border border-white/40 bg-white/20 dark:bg-white/10 backdrop-blur-lg hover:bg-white/30 dark:hover:bg-white/20 transition-all duration-300 font-semibold">
+                View Resorts
+              </button>
+            </div>
+          </div>
 
-    {/* HERO IMAGE / VIDEO */}
-    <div className="relative">
-      <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-[2rem] p-4 shadow-2xl overflow-hidden">
+          {/* HERO IMAGE / VIDEO */}
+          <div className="relative">
+            <div className="bg-white/20 dark:bg-white/10 backdrop-blur-xl border border-white/30 dark:border-white/10 rounded-[2rem] p-4 shadow-2xl overflow-hidden">
 
-        {/* VIDEO */}
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="w-full h-[420px] object-cover rounded-[1.5rem] hover:scale-[1.02] transition-all duration-700"
-        >
-          <source
-            src="https://videos.pexels.com/video-files/855289/855289-hd_1920_1080_25fps.mp4"
-            type="video/mp4"
-          />
-        </video>
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full h-[420px] object-cover rounded-[1.5rem] hover:scale-[1.02] transition-all duration-700"
+              >
+                <source
+                  src="https://videos.pexels.com/video-files/855289/855289-hd_1920_1080_25fps.mp4"
+                  type="video/mp4"
+                />
+              </video>
 
-        {/* OVERLAY */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent rounded-[2rem]" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent rounded-[2rem]" />
 
-        {/* TEXT OVERLAY */}
-        <div className="absolute bottom-10 left-10 text-white z-10">
-          <p className="uppercase tracking-[0.3em] text-sm mb-2 font-semibold">
-            Experience Nature
-          </p>
+              <div className="absolute bottom-10 left-10 text-white z-10">
+                <p className="uppercase tracking-[0.3em] text-sm mb-2 font-semibold">
+                  Experience Nature
+                </p>
 
-          <h2 className="text-4xl font-black drop-shadow-xl">
-            Beautiful Tanauan Leyte
-          </h2>
+                <h2 className="text-4xl font-black drop-shadow-xl">
+                  Beautiful Tanauan Leyte
+                </h2>
+              </div>
+
+            </div>
+          </div>
+
         </div>
-
-      </div>
-    </div>
-
-  </div>
-</section>
+      </section>
 
 {/* STATS */}
 <section className="px-6 py-20 relative z-10">
@@ -282,11 +269,7 @@ export default function Home() {
 
               <div
                 key={index}
-                className={`group backdrop-blur-xl rounded-[2rem] transition-all duration-500 ${
-  darkMode
-    ? 'bg-gray-900/60 border border-gray-700 text-white'
-    : 'bg-white/30 border border-white/30 text-slate-900'
-}`} overflow-hidden border border-white/30 hover:-translate-y-4 hover:shadow-[0_20px_60px_rgba(0,0,0,0.25)] transition-all duration-700"
+                className="group bg-white/30 backdrop-blur-xl rounded-[2rem] overflow-hidden border border-white/30 hover:-translate-y-4 hover:shadow-[0_20px_60px_rgba(0,0,0,0.25)] transition-all duration-700"
               >
 
                 <div className="overflow-hidden h-64">
