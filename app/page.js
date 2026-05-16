@@ -5,7 +5,6 @@ import { useState, useEffect } from 'react'
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false)
 
-  // DARK MODE EFFECT
   useEffect(() => {
     if (typeof window !== 'undefined') {
       if (darkMode) {
@@ -69,19 +68,19 @@ export default function Home() {
       name: 'Flores de Mayo Celebration',
       month: 'May',
       description:
-        'A colorful and faith-filled celebration honoring the Patron Saints and the Blessed Virgin Mary through the traditional Flores de Mayo festivities.',
+        'A colorful and faith-filled celebration honoring the Patron Saints and the Blessed Virgin Mary.',
     },
     {
       name: 'Fiesta Celebration of Tanauan',
       month: 'July-August',
       description:
-        'A lively town fiesta featuring parades, local delicacies, community gatherings, and religious activities.',
+        'A lively town fiesta featuring parades, food, and community gatherings.',
     },
     {
       name: 'Christmas Festival',
       month: 'December',
       description:
-        'The municipality comes alive with festive lights, performances, and family-centered holiday traditions.',
+        'Festive lights, performances, and family traditions throughout the town.',
     },
   ]
 
@@ -90,7 +89,7 @@ export default function Home() {
       name: 'Traditional Pottery',
       category: 'Clay Craftsmanship',
       description:
-        'Handmade clay pots, jars, and decorative pottery crafted by local artisans.',
+        'Handmade clay pots and jars crafted by local artisans.',
       image:
         'https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/claypot.png',
     },
@@ -98,7 +97,7 @@ export default function Home() {
       name: 'Bamboo Crafts',
       category: 'Native Handicrafts',
       description:
-        'Locally woven bamboo baskets and decorative crafts.',
+        'Locally woven bamboo baskets and crafts.',
       image:
         'https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/salaset.png',
     },
@@ -106,7 +105,7 @@ export default function Home() {
       name: 'Dried Fish Products',
       category: 'Seafood Delicacies',
       description:
-        'Fresh and flavorful dried fish products prepared traditionally.',
+        'Fresh and flavorful dried fish products.',
       image:
         'https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/dried.png',
     },
@@ -115,155 +114,79 @@ export default function Home() {
   return (
     <main className="relative overflow-hidden transition-all duration-500 bg-gradient-to-br from-sky-200 via-cyan-100 to-orange-100 dark:from-slate-950 dark:via-slate-900 dark:to-slate-800 text-slate-900 dark:text-white">
 
-      {/* GLOBAL DARK MODE TEXT GLOW */}
-<style jsx global>{`
-  .dark h1,
-  .dark h2,
-  .dark h3,
-  .dark h4,
-  .dark h5,
-  .dark h6 {
-    color: white;
-    text-shadow:
-      0 0 3px rgba(255,255,255,0.35),
-      0 0 8px rgba(56,189,248,0.25);
-  }
+      {/* DARK MODE BUTTON */}
+      <button
+        onClick={() => setDarkMode(!darkMode)}
+        className="fixed top-4 right-4 z-[999] px-3 py-1.5 rounded-xl bg-white/20 dark:bg-black/40 backdrop-blur-xl border border-white/20 dark:border-cyan-400/20 shadow-lg text-sm font-medium"
+      >
+        {darkMode ? '☀️ Light' : '🌙 Dark'}
+      </button>
 
-  .dark p,
-  .dark span,
-  .dark a,
-  .dark li,
-  .dark button {
-    color: rgba(255,255,255,0.92);
-    text-shadow:
-      0 0 2px rgba(255,255,255,0.18);
-  }
+      {/* HERO (FIXED VIDEO BACKGROUND) */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 z-10">
 
-  .dark .glass-card {
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.10);
-    box-shadow:
-      0 0 10px rgba(56,189,248,0.08),
-      0 0 20px rgba(59,130,246,0.06);
-  }
+        {/* VIDEO BACKGROUND */}
+        <div className="absolute inset-0 z-0 overflow-hidden">
 
-  .dark .gradient-title {
-    text-shadow:
-      0 0 4px rgba(255,255,255,0.35),
-      0 0 10px rgba(56,189,248,0.25);
-  }
-`}</style>
-     {/* DARK MODE BUTTON */}
-<button
-  onClick={() => setDarkMode(!darkMode)}
-  className="fixed top-4 right-4 z-[999] px-3 py-1.5 rounded-xl bg-white/20 dark:bg-black/40 backdrop-blur-xl border border-white/20 dark:border-cyan-400/20 shadow-lg text-sm font-medium hover:scale-105 transition-all duration-300 dark:shadow-[0_0_12px_rgba(56,189,248,0.35)]"
->
-  {darkMode ? '☀️ Light' : '🌙 Dark'}
-</button>
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            <source
+              src="https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/Assumptionss.mp4"
+              type="video/mp4"
+            />
+          </video>
 
-      {/* BLURRED LOGO BACKGROUND */}
-      <div className="fixed inset-0 z-0 flex items-center justify-center pointer-events-none overflow-hidden">
+          {/* overlays */}
+          <div className="absolute inset-0 bg-black/50" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-slate-950/80" />
 
-        <img
-          src="/tanauan_logo.jpg"
-          alt="Tanauan Logo Background"
-          className="w-[900px] md:w-[1200px] opacity-[0.08] blur-md animate-pulse"
-        />
+        </div>
 
-        <div className="absolute inset-0 bg-white/20 dark:bg-black/40 backdrop-blur-[2px]" />
-      </div>
+        {/* HERO CONTENT */}
+        <div className="relative z-10 max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center text-white">
 
-      {/* FLOATING BLOBS */}
-      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-cyan-400/30 dark:bg-cyan-500/20 rounded-full blur-[150px] animate-pulse" />
-
-      <div className="absolute top-40 right-0 w-[400px] h-[400px] bg-orange-300/30 dark:bg-purple-500/20 rounded-full blur-[140px] animate-pulse" />
-
-      <div className="absolute bottom-0 left-1/3 w-[450px] h-[450px] bg-pink-300/20 dark:bg-blue-500/20 rounded-full blur-[150px] animate-pulse" />
-
-      {/* HERO */}
-      <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden z-10">
-
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-40"
-          style={{
-            backgroundImage:
-              "url('https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/tanauan.png')",
-          }}
-        />
-
-        <div className="absolute inset-0 bg-gradient-to-b from-sky-900/60 via-cyan-500/20 to-orange-200/40 dark:from-black/90 dark:via-slate-900/80 dark:to-slate-950/90" />
-
-        <div className="relative z-10 max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-
-          {/* LEFT CONTENT */}
           <div>
-            <p className="uppercase tracking-[0.3em] text-sky-900 dark:text-cyan-300 font-bold mb-4 text-sm">
+            <p className="uppercase tracking-[0.3em] font-bold mb-4 text-sm text-cyan-300">
               Welcome to Eastern Visayas
             </p>
 
-            <h1 className="gradient-title text-5xl md:text-7xl font-black leading-tight mb-6 drop-shadow-[0_10px_30px_rgba(255,255,255,0.4)]">
+            <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6">
               Discover
-              <span className="block bg-gradient-to-r from-sky-900 via-cyan-600 to-orange-500 dark:from-cyan-300 dark:via-blue-400 dark:to-purple-400 bg-clip-text text-transparent">
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-400">
                 Tanauan Leyte
               </span>
             </h1>
 
-            <p className="text-lg text-slate-700 dark:text-slate-200 font-medium leading-relaxed max-w-xl mb-8">
-              Explore breathtaking beaches, rich cultural history, scenic landscapes,
-              local festivals, and relaxing resorts in Tanauan, Leyte.
+            <p className="text-lg text-white/80 mb-8 max-w-xl">
+              Explore beaches, culture, resorts, and festivals in Tanauan, Leyte.
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <button className="px-8 py-4 rounded-2xl bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-600 text-white hover:scale-105 hover:-translate-y-1 transition-all duration-300 font-semibold shadow-[0_15px_40px_rgba(14,165,233,0.45)] dark:shadow-[0_0_30px_rgba(56,189,248,0.7)]">
+              <button className="px-8 py-4 rounded-2xl bg-cyan-500 hover:scale-105 transition">
                 Explore Tourist Spots
               </button>
 
-              <button className="px-8 py-4 rounded-2xl border border-white/40 bg-white/20 dark:bg-white/10 backdrop-blur-lg hover:bg-white/30 dark:hover:bg-white/20 transition-all duration-300 font-semibold">
+              <button className="px-8 py-4 rounded-2xl border border-white/30 bg-white/10 backdrop-blur-lg">
                 View Resorts
               </button>
             </div>
           </div>
 
-{/* HERO */}
-<section
-  id="home"
-  className="relative min-h-screen flex items-center justify-center overflow-hidden"
->
+          <div className="hidden lg:block text-right">
+            <h2 className="text-4xl font-black">
+              OUR LADY OF ASSUMPTION
+            </h2>
+          </div>
 
-  {/* HERO VIDEO OVERLAY BACKGROUND */}
-  <div className="absolute inset-0 z-0 overflow-hidden">
+        </div>
 
-    <video
-      autoPlay
-      muted
-      loop
-      playsInline
-      className="w-full h-full object-cover"
-    >
-      <source
-        src="https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/Assumptionss.mp4"
-        type="video/mp4"
-      />
-    </video>
-
-    {/* DARK OVERLAY */}
-    <div className="absolute inset-0 bg-black/50" />
-
-    {/* GRADIENT OVERLAY */}
-    <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-slate-950/70" />
-
-  </div>
-
-  {/* HERO CONTENT (ON TOP OF VIDEO) */}
-  <div className="relative z-10 text-white text-center px-6">
-
-    <h2 className="text-4xl md:text-6xl font-black drop-shadow-2xl">
-      OUR LADY OF ASSUMPTION
-    </h2>
-
-  </div>
-
-</section>
+      </section>
 {/* STATS */}
 <section className="px-6 py-20 relative z-10">
         <div className="max-w-7xl mx-auto">
