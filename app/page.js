@@ -224,32 +224,36 @@ export default function Home() {
             </div>
           </div>
 
-{/* HERO VIDEO */}
-          <div className="relative w-full overflow-hidden rounded-[2rem]">
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              className="w-full h-[420px] object-cover"
-            >
-              <source
-                src="https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/Assumptionss.mp4"
-                type="video/mp4"
-              />
-            </video>
+{/* HERO VIDEO OVERLAY */}
+<div className="absolute inset-0 z-0 overflow-hidden">
 
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="w-full h-full object-cover"
+  >
+    <source
+      src="https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/Assumptionss.mp4"
+      type="video/mp4"
+    />
+  </video>
 
-            <div className="absolute bottom-10 left-10 text-white z-10">
-              <h2 className="text-4xl md:text-5xl font-black drop-shadow-lg">
-                OUR LADY OF ASSUMPTION
-              </h2>
-            </div>
-          </div>
+  {/* DARK OVERLAY */}
+  <div className="absolute inset-0 bg-black/50" />
 
-        </div>
-      </section>
+  {/* GRADIENT OVERLAY */}
+  <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-slate-950/70" />
+
+  {/* TITLE */}
+  <div className="absolute bottom-10 left-10 text-white z-10">
+    <h2 className="text-4xl md:text-6xl font-black drop-shadow-2xl">
+      OUR LADY OF ASSUMPTION
+    </h2>
+  </div>
+
+</div>
 
 
 {/* STATS */}
