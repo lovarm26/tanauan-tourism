@@ -245,11 +245,11 @@ export default function Home() {
 
               <div className="absolute bottom-10 left-10 text-white z-10">
                 <p className="uppercase tracking-[0.3em] text-sm mb-2 font-semibold">
-                  Experience Nature
+                  VIVA SENYORA! MAHAL NA PATRONA!
                 </p>
 
                 <h2 className="text-4xl font-black">
-                  Beautiful Tanauan Leyte
+                  OUR LADY OF THE ASSUMPTION OF TANAUAN LEYTE
                 </h2>
               </div>
 
