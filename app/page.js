@@ -173,7 +173,7 @@ export default function Home() {
       transform: darkMode ? 'rotate(180deg) scale(1.1)' : 'rotate(0deg) scale(1)',
     }}
   >
-    {darkMode ? '☀' : '🌙'}
+    {darkMode ? '☀️' : '🌙'}
   </span>
 
   {/* TEXT (always readable) */}
