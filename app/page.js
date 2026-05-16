@@ -271,22 +271,22 @@ export default function Home() {
 
 <div className="absolute bottom-10 left-10 text-white z-10 overflow-hidden">
 
-  <motion.h2
-    initial={{ opacity: 0, y: 40, scale: 0.98, filter: "blur(10px)" }}
-    animate={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
-    transition={{
-      duration: 1.8,
-      ease: [0.25, 0.1, 0.25, 1],
-      delay: 0.2,
-    }}
-    className="font-black whitespace-nowrap text-2xl md:text-4xl lg:text-5xl drop-shadow-2xl"
-    style={{
-      letterSpacing: '0.08em',
-      textShadow: '0 0 25px rgba(255,255,255,0.25)',
-    }}
-  >
-    MAHAL NA PATRONA
-  </motion.h2>
+ <motion.h2
+  initial={{ opacity: 0, y: 40, scale: 0.98, filter: "blur(10px)" }}
+  animate={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
+  transition={{
+    duration: 1.8,
+    ease: [0.25, 0.1, 0.25, 1],
+    delay: 0.2,
+  }}
+  className="font-['Cinzel'] font-semibold text-lg md:text-2xl lg:text-3xl leading-snug drop-shadow-2xl max-w-[90%]"
+  style={{
+    letterSpacing: '0.12em',
+    textShadow: '0 0 20px rgba(255,255,255,0.18)',
+  }}
+>
+  OUR LADY OF<br className="hidden sm:block" /> ASSUMPTION
+</motion.h2>
 
 </div>
 
