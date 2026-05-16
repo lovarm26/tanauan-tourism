@@ -157,9 +157,13 @@ export default function Home() {
      {/* DARK MODE BUTTON */}
 <button
   onClick={() => setDarkMode(!darkMode)}
-  className="fixed top-4 right-4 z-[999] px-3 py-1.5 rounded-xl bg-white/20 dark:bg-black/40 backdrop-blur-xl border border-white/20 dark:border-cyan-400/20 shadow-lg text-sm font-medium hover:scale-105 transition-all duration-300 dark:shadow-[0_0_12px_rgba(56,189,248,0.35)]"
+  className={`fixed top-4 right-4 z-[999] px-4 py-2 rounded-xl font-semibold backdrop-blur-xl border transition-all duration-300 hover:scale-105
+    ${darkMode
+      ? 'bg-white text-black border-white/40 shadow-[0_0_20px_rgba(255,255,255,0.3)]'
+      : 'bg-black text-white border-black/40 shadow-[0_0_20px_rgba(0,0,0,0.25)]'
+    }`}
 >
-  {darkMode ? '☀️ Light' : '🌙 Dark'}
+  {darkMode ? '☀ Light Mode' : '🌙 Dark Mode'}
 </button>
 
       {/* BLURRED LOGO BACKGROUND */}
