@@ -157,15 +157,34 @@ export default function Home() {
      {/* DARK MODE BUTTON */}
 <button
   onClick={() => setDarkMode(!darkMode)}
-  className={`fixed top-4 right-4 z-[999] px-3 py-1.5 text-xs rounded-lg font-semibold backdrop-blur-xl border transition-all duration-300 hover:scale-105
-    ${
-      darkMode
-        ? 'bg-white text-black border-white/40 shadow-[0_0_15px_rgba(255,255,255,0.25)]'
-        : 'bg-black text-white border-black/40 shadow-[0_0_15px_rgba(0,0,0,0.25)]'
-    }
-  `}
+  className="fixed top-4 right-4 z-[999] flex items-center gap-2 px-3 py-1.5 text-xs rounded-full font-semibold backdrop-blur-xl border transition-all duration-300 hover:scale-105"
+  style={{
+    backgroundColor: darkMode ? '#ffffff' : '#000000',
+    borderColor: darkMode ? 'rgba(255,255,255,0.4)' : 'rgba(0,0,0,0.4)',
+    boxShadow: darkMode
+      ? '0 0 15px rgba(255,255,255,0.25)'
+      : '0 0 15px rgba(0,0,0,0.25)',
+  }}
 >
-  {darkMode ? '☀ Light' : '🌙 Dark'}
+  {/* ICON (animated switch feel) */}
+  <span
+    className="transition-all duration-300"
+    style={{
+      transform: darkMode ? 'rotate(180deg) scale(1.1)' : 'rotate(0deg) scale(1)',
+    }}
+  >
+    {darkMode ? '☀' : '🌙'}
+  </span>
+
+  {/* TEXT (always readable) */}
+  <span
+    className="transition-all duration-300"
+    style={{
+      color: darkMode ? '#000000' : '#ffffff',
+    }}
+  >
+    {darkMode ? 'Light' : 'Dark'}
+  </span>
 </button>
 
       {/* BLURRED LOGO BACKGROUND */}
