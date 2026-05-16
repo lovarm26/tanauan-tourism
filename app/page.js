@@ -237,7 +237,7 @@ export default function Home() {
                 className="w-full h-[420px] object-cover rounded-[1.5rem] hover:scale-[1.02] transition-all duration-700"
               >
                 <source
-                  src="https://videos.pexels.com/video-files/855289/855289-hd_1920_1080_25fps.mp4"
+                  src="https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/Assumptionss.mp4"
                   type="video/mp4"
                 />
               </video>
@@ -246,11 +246,11 @@ export default function Home() {
 
               <div className="absolute bottom-10 left-10 text-white z-10">
                 <p className="uppercase tracking-[0.3em] text-sm mb-2 font-semibold">
-                  Experience Nature
+                  OUR LADY OF
                 </p>
 
                 <h2 className="text-4xl font-black drop-shadow-xl">
-                  Beautiful Tanauan Leyte
+                  ASSUMPTION TANAUAN LEYTE
                 </h2>
               </div>
 
