@@ -272,7 +272,7 @@ export default function Home() {
 <div className="absolute bottom-10 left-10 text-white z-10 overflow-hidden">
 
 <motion.div
-  className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 px-4"
+  className="mt-6 flex justify-center px-4"
   animate={{
     opacity: [0.75, 1, 0.75],
     y: [0, -4, 0],
@@ -283,14 +283,14 @@ export default function Home() {
     ease: "easeInOut",
   }}
 >
-  {/* GLASS CONTAINER BOX (UNCHANGED) */}
+  {/* GLASS CONTAINER BOX */}
   <div className="bg-black/40 backdrop-blur-xl border border-white/20 rounded-2xl px-6 py-3 shadow-2xl">
 
     <p
       className="font-serif text-xs md:text-sm lg:text-base text-white whitespace-nowrap text-center"
       style={{
         letterSpacing: "0.16em",
-        textShadow: "0 0 15px rgba(255,255,255,0.2)",
+        textShadow: "0 0 24px rgba(255,255,255,0.2)",
       }}
     >
       OUR LADY OF ASSUMPTION
