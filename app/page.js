@@ -250,39 +250,52 @@ export default function Home() {
             </div>
           </div>
 
-  {/* HERO IMAGE / VIDEO */}
-          <div className="relative">
-            <div className="bg-white/20 dark:bg-white/10 backdrop-blur-xl border border-white/30 dark:border-white/10 rounded-[2rem] p-4 shadow-2xl overflow-hidden">
+{/* HERO IMAGE / VIDEO */}
+<div className="relative">
+  <div className="bg-white/20 dark:bg-white/10 backdrop-blur-xl border border-white/30 dark:border-white/10 rounded-[2rem] p-4 shadow-2xl overflow-hidden relative">
 
-              <video
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="w-full h-[420px] object-cover rounded-[1.5rem] hover:scale-[1.02] transition-all duration-700"
-              >
-                <source
-                  src="https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/Assumptionss.mp4"
-                  type="video/mp4"
-                />
-              </video>
+    {/* VIDEO */}
+    <video
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="w-full h-[420px] object-cover rounded-[1.5rem] hover:scale-[1.02] transition-all duration-700"
+    >
+      <source
+        src="https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/Assumptionss.mp4"
+        type="video/mp4"
+      />
+    </video>
 
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent rounded-[2rem]" />
+    {/* DARK GRADIENT OVERLAY */}
+    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent rounded-[2rem]" />
 
-              <div className="absolute bottom-10 left-10 text-white z-10">
-                <p className="uppercase tracking-[0.3em] text-sm mb-2 font-semibold">
-                  OUR LADY OF
-                </p>
+    {/* BOTTOM TEXT */}
+    <div className="absolute bottom-6 left-6 right-6 text-white z-10 px-2">
 
-                <h2 className="text-4xl font-black drop-shadow-xl">
-                  ASSUMPTION TANAUAN LEYTE
-                </h2>
-              </div>
+      <p
+        className="uppercase tracking-[0.35em] text-xs md:text-sm mb-2 font-medium opacity-90"
+        style={{ fontFamily: 'serif' }}
+      >
+        OUR LADY OF
+      </p>
 
-            </div>
-          </div>
+      <h2
+        className="text-2xl md:text-4xl lg:text-5xl font-extrabold leading-tight drop-shadow-xl"
+        style={{
+          fontFamily: '"Cinzel", "Playfair Display", serif',
+          letterSpacing: '0.05em',
+        }}
+      >
+        ASSUMPTION <br className="hidden md:block" />
+        TANAUAN LEYTE
+      </h2>
 
-        </div>
+    </div>
+
+  </div>
+  </div>
       </section>
 {/* STATS */}
 <section className="px-6 py-20 relative z-10">
