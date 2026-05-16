@@ -116,47 +116,43 @@ export default function Home() {
     <main className="relative overflow-hidden transition-all duration-500 bg-gradient-to-br from-sky-200 via-cyan-100 to-orange-100 dark:from-slate-950 dark:via-slate-900 dark:to-slate-800 text-slate-900 dark:text-white">
 
       {/* GLOBAL DARK MODE TEXT GLOW */}
-      <style jsx global>{`
-        .dark h1,
-        .dark h2,
-        .dark h3,
-        .dark h4,
-        .dark h5,
-        .dark h6 {
-          color: white;
-          text-shadow:
-            0 0 8px rgba(255,255,255,0.7),
-            0 0 20px rgba(56,189,248,0.7),
-            0 0 40px rgba(59,130,246,0.5);
-        }
+<style jsx global>{`
+  .dark h1,
+  .dark h2,
+  .dark h3,
+  .dark h4,
+  .dark h5,
+  .dark h6 {
+    color: white;
+    text-shadow:
+      0 0 3px rgba(255,255,255,0.35),
+      0 0 8px rgba(56,189,248,0.25);
+  }
 
-        .dark p,
-        .dark span,
-        .dark a,
-        .dark li,
-        .dark button {
-          color: rgba(255,255,255,0.95);
-          text-shadow:
-            0 0 6px rgba(255,255,255,0.45),
-            0 0 14px rgba(56,189,248,0.35);
-        }
+  .dark p,
+  .dark span,
+  .dark a,
+  .dark li,
+  .dark button {
+    color: rgba(255,255,255,0.92);
+    text-shadow:
+      0 0 2px rgba(255,255,255,0.18);
+  }
 
-        .dark .glass-card {
-          background: rgba(255,255,255,0.08);
-          border: 1px solid rgba(255,255,255,0.12);
-          box-shadow:
-            0 0 20px rgba(56,189,248,0.15),
-            0 0 50px rgba(59,130,246,0.12);
-        }
+  .dark .glass-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.10);
+    box-shadow:
+      0 0 10px rgba(56,189,248,0.08),
+      0 0 20px rgba(59,130,246,0.06);
+  }
 
-        .dark .gradient-title {
-          text-shadow:
-            0 0 10px rgba(255,255,255,0.8),
-            0 0 25px rgba(56,189,248,0.8),
-            0 0 45px rgba(59,130,246,0.6);
-        }
-      `}</style>
-
+  .dark .gradient-title {
+    text-shadow:
+      0 0 4px rgba(255,255,255,0.35),
+      0 0 10px rgba(56,189,248,0.25);
+  }
+`}</style>
       {/* DARK MODE BUTTON */}
       <button
         onClick={() => setDarkMode(!darkMode)}
