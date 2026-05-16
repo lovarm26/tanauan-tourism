@@ -115,10 +115,52 @@ export default function Home() {
   return (
     <main className="relative overflow-hidden transition-all duration-500 bg-gradient-to-br from-sky-200 via-cyan-100 to-orange-100 dark:from-slate-950 dark:via-slate-900 dark:to-slate-800 text-slate-900 dark:text-white">
 
+      {/* GLOBAL DARK MODE TEXT GLOW */}
+      <style jsx global>{`
+        .dark h1,
+        .dark h2,
+        .dark h3,
+        .dark h4,
+        .dark h5,
+        .dark h6 {
+          color: white;
+          text-shadow:
+            0 0 8px rgba(255,255,255,0.7),
+            0 0 20px rgba(56,189,248,0.7),
+            0 0 40px rgba(59,130,246,0.5);
+        }
+
+        .dark p,
+        .dark span,
+        .dark a,
+        .dark li,
+        .dark button {
+          color: rgba(255,255,255,0.95);
+          text-shadow:
+            0 0 6px rgba(255,255,255,0.45),
+            0 0 14px rgba(56,189,248,0.35);
+        }
+
+        .dark .glass-card {
+          background: rgba(255,255,255,0.08);
+          border: 1px solid rgba(255,255,255,0.12);
+          box-shadow:
+            0 0 20px rgba(56,189,248,0.15),
+            0 0 50px rgba(59,130,246,0.12);
+        }
+
+        .dark .gradient-title {
+          text-shadow:
+            0 0 10px rgba(255,255,255,0.8),
+            0 0 25px rgba(56,189,248,0.8),
+            0 0 45px rgba(59,130,246,0.6);
+        }
+      `}</style>
+
       {/* DARK MODE BUTTON */}
       <button
         onClick={() => setDarkMode(!darkMode)}
-        className="fixed top-6 right-6 z-[999] px-5 py-3 rounded-2xl bg-white/20 dark:bg-black/40 backdrop-blur-xl border border-white/30 dark:border-white/10 shadow-2xl font-semibold hover:scale-105 transition-all duration-300"
+        className="fixed top-6 right-6 z-[999] px-5 py-3 rounded-2xl bg-white/20 dark:bg-black/40 backdrop-blur-xl border border-white/30 dark:border-cyan-400/30 shadow-2xl font-semibold hover:scale-105 transition-all duration-300 dark:shadow-[0_0_25px_rgba(56,189,248,0.45)]"
       >
         {darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
       </button>
@@ -132,7 +174,7 @@ export default function Home() {
           className="w-[900px] md:w-[1200px] opacity-[0.08] blur-md animate-pulse"
         />
 
-        <div className="absolute inset-0 bg-white/20 dark:bg-black/30 backdrop-blur-[2px]" />
+        <div className="absolute inset-0 bg-white/20 dark:bg-black/40 backdrop-blur-[2px]" />
       </div>
 
       {/* FLOATING BLOBS */}
@@ -153,7 +195,7 @@ export default function Home() {
           }}
         />
 
-        <div className="absolute inset-0 bg-gradient-to-b from-sky-900/60 via-cyan-500/20 to-orange-200/40 dark:from-black/80 dark:via-slate-900/70 dark:to-slate-900/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-sky-900/60 via-cyan-500/20 to-orange-200/40 dark:from-black/90 dark:via-slate-900/80 dark:to-slate-950/90" />
 
         <div className="relative z-10 max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
 
@@ -163,20 +205,20 @@ export default function Home() {
               Welcome to Eastern Visayas
             </p>
 
-            <h1 className="text-5xl md:text-7xl font-black leading-tight mb-6 drop-shadow-[0_10px_30px_rgba(255,255,255,0.4)]">
+            <h1 className="gradient-title text-5xl md:text-7xl font-black leading-tight mb-6 drop-shadow-[0_10px_30px_rgba(255,255,255,0.4)]">
               Discover
               <span className="block bg-gradient-to-r from-sky-900 via-cyan-600 to-orange-500 dark:from-cyan-300 dark:via-blue-400 dark:to-purple-400 bg-clip-text text-transparent">
                 Tanauan Leyte
               </span>
             </h1>
 
-            <p className="text-lg text-slate-700 dark:text-slate-300 font-medium leading-relaxed max-w-xl mb-8">
+            <p className="text-lg text-slate-700 dark:text-slate-200 font-medium leading-relaxed max-w-xl mb-8">
               Explore breathtaking beaches, rich cultural history, scenic landscapes,
               local festivals, and relaxing resorts in Tanauan, Leyte.
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <button className="px-8 py-4 rounded-2xl bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-600 text-white hover:scale-105 hover:-translate-y-1 transition-all duration-300 font-semibold shadow-[0_15px_40px_rgba(14,165,233,0.45)]">
+              <button className="px-8 py-4 rounded-2xl bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-600 text-white hover:scale-105 hover:-translate-y-1 transition-all duration-300 font-semibold shadow-[0_15px_40px_rgba(14,165,233,0.45)] dark:shadow-[0_0_30px_rgba(56,189,248,0.7)]">
                 Explore Tourist Spots
               </button>
 
@@ -188,7 +230,7 @@ export default function Home() {
 
           {/* HERO IMAGE / VIDEO */}
           <div className="relative">
-            <div className="bg-white/20 dark:bg-white/10 backdrop-blur-xl border border-white/30 dark:border-white/10 rounded-[2rem] p-4 shadow-2xl overflow-hidden">
+            <div className="glass-card bg-white/20 dark:bg-white/10 backdrop-blur-xl border border-white/30 dark:border-white/10 rounded-[2rem] p-4 shadow-2xl overflow-hidden">
 
               <video
                 autoPlay
@@ -210,7 +252,7 @@ export default function Home() {
                   Experience Nature
                 </p>
 
-                <h2 className="text-4xl font-black drop-shadow-xl">
+                <h2 className="text-4xl font-black">
                   Beautiful Tanauan Leyte
                 </h2>
               </div>
@@ -220,6 +262,7 @@ export default function Home() {
 
         </div>
       </section>
+
 
 {/* STATS */}
 <section className="px-6 py-20 relative z-10">
