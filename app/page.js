@@ -224,37 +224,28 @@ export default function Home() {
             </div>
           </div>
 
-         {/* HERO IMAGE / VIDEO */}
-<div className="relative w-full overflow-hidden">
+{/* HERO VIDEO */}
+          <div className="relative w-full overflow-hidden rounded-[2rem]">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full h-[420px] object-cover"
+            >
+              <source
+                src="https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/Assumptionss.mp4"
+                type="video/mp4"
+              />
+            </video>
 
-  <video
-    autoPlay
-    muted
-    loop
-    playsInline
-    className="w-full h-[420px] object-cover"
-  >
-    <source
-      src="https://6a01e0c5e3ddafb3f4a13ff4.imgix.net/Assumptionss.mp4"
-      type="video/mp4"
-    />
-  </video>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
 
-  {/* OVERLAY */}
-  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
-
-  {/* TEXT CONTENT */}
-  <div className="absolute bottom-10 left-10 text-white z-10">
-    <p className="uppercase tracking-[0.3em] text-sm mb-2 font-semibold">
-      
-    </p>
-
-    <h2 className="text-4xl md:text-5xl font-black drop-shadow-lg">
-      OUR LADY OF ASSUMPTION
-    </h2>
-  </div>
-
-</div>
+            <div className="absolute bottom-10 left-10 text-white z-10">
+              <h2 className="text-4xl md:text-5xl font-black drop-shadow-lg">
+                OUR LADY OF ASSUMPTION
+              </h2>
+            </div>
           </div>
 
         </div>
